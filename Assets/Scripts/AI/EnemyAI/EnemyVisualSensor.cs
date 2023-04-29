@@ -37,7 +37,7 @@ namespace YATE.AI
                             {
                                 targets.Add(player);
                                 OnDetectedPlayer?.Invoke();
-                            }                            
+                            }
                         }
                     }
 
@@ -50,7 +50,7 @@ namespace YATE.AI
             }
         }
 
-        
+
 
         private void OnDrawGizmos()
         {
@@ -67,7 +67,7 @@ namespace YATE.AI
             {
                 Debug.DrawRay(transform.position, directionA * radius, Color.red);
                 Debug.DrawRay(transform.position, directionB * radius, Color.red);
-            }            
+            }
         }
     }
 }

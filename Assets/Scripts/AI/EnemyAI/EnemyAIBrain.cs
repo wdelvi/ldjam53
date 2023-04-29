@@ -22,7 +22,7 @@ namespace YATE.AI
 
         public override void DecideBehaviour()
         {
-            
+
         }
 
         // TODO - Implement reaction to player detection
