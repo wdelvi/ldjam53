@@ -1,9 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Rendering;
 
 namespace TooLoo
 {
@@ -195,6 +193,25 @@ namespace TooLoo
             where T : MonoBehaviour
         {
             return items.OrderBy(i => Vector3.SqrMagnitude(i.transform.position - position)).ToList();
+        }
+
+        public static bool IsInLineOfSight(Transform source, Transform target, float rayLength)
+        {
+            Vector3 targetSpot = new Vector3(target.position.x, source.position.y, target.position.z);
+            float distanceToTarget = Vector3.Distance(targetSpot, source.position);
+            Vector3 directionToTarget = (targetSpot - source.position).normalized;
+            RaycastHit[] hits = Physics.RaycastAll(source.position, directionToTarget, rayLength);
+
+            System.Array.Sort(hits, CompareRaycastHitByDistance);
+
+            if (hits[0].transform == target.transform) return true;
+
+            return false;
+        }
+
+        public static int CompareRaycastHitByDistance(RaycastHit a, RaycastHit b)
+        {
+            return a.distance.CompareTo(b.distance);
         }
     }
 }

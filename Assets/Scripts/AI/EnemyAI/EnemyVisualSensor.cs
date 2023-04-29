@@ -33,8 +33,11 @@ namespace YATE.AI
                     {
                         if (Utils.IsInFOV(transform, player.transform, minDetectionAngle, maxDetectionAngle))
                         {
-                            targets.Add(player);
-                            OnDetectedPlayer?.Invoke();
+                            if (Utils.IsInLineOfSight(transform, player.transform, radius))
+                            {
+                                targets.Add(player);
+                                OnDetectedPlayer?.Invoke();
+                            }                            
                         }
                     }
 
@@ -47,14 +50,24 @@ namespace YATE.AI
             }
         }
 
+        
+
         private void OnDrawGizmos()
         {
             float viewAngle = maxDetectionAngle - minDetectionAngle;
             Vector3 directionA = Quaternion.Euler(0, -viewAngle / 2, 0) * transform.forward;
             Vector3 directionB = Quaternion.Euler(0, viewAngle / 2, 0) * transform.forward;
 
-            Debug.DrawRay(transform.position, directionA * radius, Color.red);
-            Debug.DrawRay(transform.position, directionB * radius, Color.red);
+            if (targets.Count == 0)
+            {
+                Debug.DrawRay(transform.position, directionA * radius, Color.green);
+                Debug.DrawRay(transform.position, directionB * radius, Color.green);
+            }
+            else
+            {
+                Debug.DrawRay(transform.position, directionA * radius, Color.red);
+                Debug.DrawRay(transform.position, directionB * radius, Color.red);
+            }            
         }
     }
 }

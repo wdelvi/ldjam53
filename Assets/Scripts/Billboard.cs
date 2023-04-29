@@ -7,6 +7,7 @@ namespace YATE
 {
     public class Billboard : MonoBehaviour
     {
+        [SerializeField] private CharacterController character;
         [SerializeField] private EnemyAIAgent agent;
         [SerializeField] private SpriteRenderer spriteRenderer;
 
@@ -32,7 +33,15 @@ namespace YATE
 
         private void HandleFlip()
         {
-            Vector3 moveDir = agent.Navigator.velocity;
+            Vector3 moveDir = Vector3.zero;
+            if (character != null)
+            {
+                moveDir = character.velocity;
+            }
+            else if (agent != null)
+            {
+                moveDir = agent.Navigator.velocity;
+            }
 
             if (moveDir.x < 0f)
             {

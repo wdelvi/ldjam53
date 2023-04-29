@@ -25,6 +25,7 @@ namespace YATE.AI
             
         }
 
+        // TODO - Implement reaction to player detection
         private void OnDetectedPlayer()
         {
             Debug.Log("Detected Player!!");
