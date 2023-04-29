@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e444e5f947e2a7409a1eaa10f9fa16e, type: 3}
-  m_Name: BubbleD_SC
+  m_Name: LDTest_SC
   m_EditorClassIdentifier: 
   internals:
     data:
@@ -18,7 +18,7 @@ MonoBehaviour:
       previewAudioMixerGroup: {fileID: 0}
       expandPreview: 0
       expandAudioClips: 1
-      expandSettings: 1
+      expandSettings: 0
       previewCurves: 1
       audioMixerGroup: {fileID: 0}
       priority: 0.5
@@ -30,7 +30,7 @@ MonoBehaviour:
       stopIfTransformIsNull: 1
       randomStartPosition: 0
       randomStartPositionMin: 0
-      randomStartPositionMax: 1
+      randomStartPositionMax: 0.88614804
       startPosition: 0
       reverse: 0
       neverStealVoice: 0
@@ -43,7 +43,7 @@ MonoBehaviour:
       bypassReverbZones: 0
       bypassVoiceEffects: 0
       bypassListenerEffects: 0
-      volumeExpand: 1
+      volumeExpand: 0
       volumeDecibel: 0
       volumeRatio: 1
       volumeRandomEnable: 0
@@ -647,4 +647,4 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
     audioClips:
-    - {fileID: 8300000, guid: 671ba8b8780daba4f89cb9ca19edd5ea, type: 3}
+    - {fileID: 8300000, guid: 019da4abc7408e140b6b6963408e055c, type: 3}

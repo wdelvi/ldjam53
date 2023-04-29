@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 2023590513}
   - component: {fileID: 2023590512}
   m_Layer: 0
-  m_Name: Music
+  m_Name: Music-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,7 +412,7 @@ MonoBehaviour:
     soundEventsExpand: 1
     soundTriggerPart:
     - expandSoundEvent: 1
-      soundEvent: {fileID: 11400000, guid: 04c544d8fd85b5e40aa38b074fc0d1a0, type: 2}
+      soundEvent: {fileID: 11400000, guid: 66651d87061ef6c4386ac39f2778f682, type: 2}
       soundEventModifier:
         volumeDecibel: 0
         volumeRatio: 1

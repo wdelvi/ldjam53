@@ -10,53 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b80e83c0feb1444db6d74f0748b6ec9, type: 3}
-  m_Name: Bubble_SE
+  m_Name: LDTest_SE
   m_EditorClassIdentifier: 
   internals:
     data:
       previewAudioMixerGroup: {fileID: 0}
       expandSoundContainers: 1
       expandTimeline: 1
-      expandPreview: 1
-      expandSettings: 1
+      expandPreview: 0
+      expandSettings: 0
       expandTriggerOnPlay: 1
       expandTriggerOnStop: 0
       expandTriggerOnTail: 1
       expandAllSoundTag: 0
       timelineSoundContainerData:
-      - delay: 0
-        volumeRatio: 1
-        volumeDecibel: 0
-      - delay: 0
-        volumeRatio: 1
-        volumeDecibel: 0
-      - delay: 0
-        volumeRatio: 1
-        volumeDecibel: 0
-      - delay: 0
-        volumeRatio: 1
-        volumeDecibel: 0
-      - delay: 0
-        volumeRatio: 1
-        volumeDecibel: 0
-      - delay: 0
-        volumeRatio: 1
-        volumeDecibel: 0
-      - delay: 0
-        volumeRatio: 1
-        volumeDecibel: 0
-      - delay: 0
-        volumeRatio: 1
-        volumeDecibel: 0
-      - delay: 0
-        volumeRatio: 1
-        volumeDecibel: 0
-      - delay: 0
-        volumeRatio: 1
-        volumeDecibel: 0
-      - delay: 0
-        volumeRatio: 1
-        volumeDecibel: 0
       - delay: 0
         volumeRatio: 1
         volumeDecibel: 0
@@ -115,7 +82,7 @@ MonoBehaviour:
       soundPolyGroupPriority: 1
       cooldownTime: 0
       probability: 100
-      expandIntensity: 1
+      expandIntensity: 0
       intensityAdd: 0
       intensityMultiplier: 1
       intensityRolloff: 0
@@ -259,15 +226,4 @@ MonoBehaviour:
         soundEvent:
         - {fileID: 0}
     soundContainers:
-    - {fileID: 11400000, guid: 48e8f2318169ca64ebad77d8c5b68d8c, type: 2}
-    - {fileID: 11400000, guid: 590f39678880c044c9ab37c944f09e9d, type: 2}
-    - {fileID: 11400000, guid: 34973f51cf53f9a42a3ac8c737372d8b, type: 2}
-    - {fileID: 11400000, guid: 0ac3ae19847d917418e75efa5406d15a, type: 2}
-    - {fileID: 11400000, guid: 96eedb0025b3b0541a17248b9c2f6a6c, type: 2}
-    - {fileID: 11400000, guid: fa332924055217146a4207abee4b0d44, type: 2}
-    - {fileID: 11400000, guid: 60def8ecd9ccd3d449a16e8313f2a031, type: 2}
-    - {fileID: 11400000, guid: 5e04671e741eae44dbbc3da796f2d493, type: 2}
-    - {fileID: 11400000, guid: cbaab427ceb0b084794316634b996c58, type: 2}
-    - {fileID: 11400000, guid: fdf6a73b8b96ce3478f55f33268bc5cb, type: 2}
-    - {fileID: 11400000, guid: db81ea580751ba74587dcee1ae8094ce, type: 2}
-    - {fileID: 11400000, guid: 9b1ee40ec218b0b478ae960d0929d7c1, type: 2}
+    - {fileID: 11400000, guid: 4a17302d41ebfd34cb9c150a68aa35e1, type: 2}
