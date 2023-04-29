@@ -1,0 +1,29 @@
+// http://www.sonity.org/ Created by Victor Engström
+// Copyright 2022 Sonigon AB - All Rights Reserved
+
+Sonity - Changelog
+
+1.0.1
+Please remove the whole Sonity folder before upgrading because folders were moved.
+New feature: Automatic asset creator finds common denominator name.
+New feature: SoundContainer presets added set automatic looping and automatic crossfades.
+Added new examples used in the new gun tutorials.
+Updated documentation.
+Fixed bug with serialized cache bools.
+Fixed bug with SoundTag position.
+Fixed bug with preview SoundEvent distance scale.
+Fixed so debug logs only print in developent builds and the editor.
+Fixed nullcheck for camera in "Debug SoundEvents Live in Game View".
+Changed so timeline zooms when holding down control and scrolling with mousewheel.
+Changed so SoundEvent SoundTag always use modifiers.
+Trigger on tail default length changed to 0.
+Trigger on tail added warning if length is less than shortest AudioClip.
+SoundEvent and SoundManager GetMaxLength removed forceUpdate.
+All helpboxes now respect GUI Warnings setting.
+Optimized SoundManager update.
+Minor spelling corrections of tooltips and documentation.
+Cleared SoundEventInstanceDictionaryValue.cs
+Changed template scripts to useDontDestroyOnLoad to public.
+
+1.0.0
+Release.
