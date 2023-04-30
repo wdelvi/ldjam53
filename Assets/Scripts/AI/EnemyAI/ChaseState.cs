@@ -29,7 +29,7 @@ namespace YATE.AI
         {
             if (agent.PlayerCharacterTarget is null 
                 || !agent.PlayerCharacterTarget.IsAlive
-                || Vector3.Distance(agent.PlayerCharacterTarget.transform.position, agent.transform.position) > agent.Sensor.Radius)
+                || Vector3.Distance(agent.PlayerCharacterTarget.transform.position, agent.transform.position) > agent.FOV.ViewRadius)
             {
                 OnTargetGone?.Invoke();
                 return;
