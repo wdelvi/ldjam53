@@ -12,7 +12,6 @@ namespace YATE.AI
         public event Action OnAcquireTarget;
 
         private Transform currentWaypoint;
-        private int waypointIndex;
         private float waitTimer;
         private float maxIdleTime;
         private float idleTime;
@@ -26,7 +25,20 @@ namespace YATE.AI
 
         public override void OnEnter()
         {
+            agent.Navigator.speed = agent.MovementAI.WalkSpeed;
+            agent.Navigator.stoppingDistance = 0f;
             idleTime = UnityEngine.Random.Range(1f, maxIdleTime);
+        }
+
+        public override void OnExit()
+        {
+            if (currentWaypoint != null)
+            {
+                waypoints.Enqueue(currentWaypoint);
+                currentWaypoint = null;
+            }
+
+            waitTimer = 0f;
         }
 
         public override void OnUpdate()

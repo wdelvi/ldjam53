@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using YATE.AI;
+using YATE;
 using TooLoo.AI;
 
 namespace YATE.AI
 {
-    public class EnemyAIBrain : AIBrain
+    public class StaticEnemyAIBrain : AIBrain
     {
         [SerializeField] protected EnemyAIAgent agent;
 
@@ -31,7 +33,7 @@ namespace YATE.AI
             if (agent.PlayerCharacterTarget is null)
             {
                 agent.SetTarget(player);
-                (agent.MovementAI as EnemyMovementAI).OnAcquireTarget();
+                (agent.MovementAI as StaticEnemyMovementAI).OnAcquireTarget();
             }
         }
     }
