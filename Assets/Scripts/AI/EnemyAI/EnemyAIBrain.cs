@@ -12,12 +12,12 @@ namespace YATE.AI
         public override void Init()
         {
             base.Init();
-            (agent.Sensor as EnemyVisualSensor).OnDetectedPlayer += OnDetectedPlayer;
+            agent.FOV.OnDetectedTarget += OnDetectedPlayer;
         }
 
         protected void OnDisable()
         {
-            (agent.Sensor as EnemyVisualSensor).OnDetectedPlayer -= OnDetectedPlayer;
+            agent.FOV.OnDetectedTarget -= OnDetectedPlayer;
         }
 
         public override void DecideBehaviour()
@@ -26,11 +26,11 @@ namespace YATE.AI
         }
 
         // TODO - Implement reaction to player detection
-        protected virtual void OnDetectedPlayer(PlayerCharacter player)
+        protected virtual void OnDetectedPlayer()
         {
             if (agent.PlayerCharacterTarget is null)
-            {
-                agent.SetTarget(player);
+            {                
+                agent.SetTarget(agent.FOV.visibleTargets[0].GetComponent<PlayerCharacter>());
                 (agent.MovementAI as EnemyMovementAI).OnAcquireTarget();
             }
         }

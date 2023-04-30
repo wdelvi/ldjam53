@@ -7,13 +7,15 @@ namespace YATE.AI
 {
     public class EnemyAIAgent : AIAgent
     {
-        [Header("Combat Settings")]
+        [Header("YATE Settings")]
+        [SerializeField] protected FieldOfView fov;
         [SerializeField] protected float attackRange = 2f;
 
         protected PlayerCharacter playerCharacterTarget;
 
         public float AttackRange => attackRange;
         public PlayerCharacter PlayerCharacterTarget => playerCharacterTarget;
+        public FieldOfView FOV => fov;
 
         public void SetTarget(PlayerCharacter target)
         {

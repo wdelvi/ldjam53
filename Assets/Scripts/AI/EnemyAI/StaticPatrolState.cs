@@ -38,7 +38,7 @@ namespace YATE.AI
         {
             Vector3[] positions = Utils.GeneratePositionsOnCircleSection(
                 agent.transform, 
-                agent.Sensor.Radius, 
+                agent.FOV.ViewRadius, 
                 rotationRange, 
                 rotateCount);
 
