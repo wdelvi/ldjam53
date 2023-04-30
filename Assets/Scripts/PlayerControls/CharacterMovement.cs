@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TooLoo;
 using UnityEngine;
 
 namespace YATE
@@ -11,10 +12,11 @@ namespace YATE
         [Header("Movement Settings")]
         [SerializeField] private float moveSpeed = 5f;
 
-        private float finalMoveSpeed;
+        [SerializeField, ReadOnly] private bool isSprinting;
+        [SerializeField, ReadOnly] private float finalMoveSpeed;
 
-        public System.Action OnSprintStart;
-        public System.Action OnSprintStop;
+        public bool IsMoving => characterController.velocity.magnitude > 0.1f;
+        public bool IsSprinting => isSprinting;
 
         // Update is called once per frame
         void Update()
@@ -36,10 +38,12 @@ namespace YATE
 
             if (Input.GetKey(KeyCode.LeftShift))
             {
+                isSprinting = true;
                 finalMoveSpeed = moveSpeed * 2f;
             }
             else
             {
+                isSprinting = false;
                 finalMoveSpeed = moveSpeed;
             }
 
