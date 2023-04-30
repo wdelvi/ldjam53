@@ -13,7 +13,7 @@ namespace YATE.AI
         [SerializeField] private float minDetectionAngle = -50f;
         [SerializeField] private float maxDetectionAngle = 50f;
 
-        public Action OnDetectedPlayer;
+        public Action<PlayerCharacter> OnDetectedPlayer;
 
         public override void ScanEnvironment()
         {
@@ -36,7 +36,7 @@ namespace YATE.AI
                             if (Utils.IsInLineOfSight(transform, player.transform, radius))
                             {
                                 targets.Add(player);
-                                OnDetectedPlayer?.Invoke();
+                                OnDetectedPlayer?.Invoke(player);
                             }
                         }
                     }
