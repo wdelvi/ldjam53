@@ -1,28 +1,29 @@
-using UnityEngine;
-using UnityEngine.AI;
+using System.Collections;
+using System.Collections.Generic;
 using TooLoo.AI.FSM;
-using TooLoo.AI;
+using UnityEngine;
 
 namespace YATE.AI
 {
-    public class EnemyMovementAI : MovementFSM
+    public class StaticEnemyMovementAI : MovementFSM
     {
-        [Header("YATE Enemy Movement AI Settings")]
+        [Header("YATE Enemy Movement AI Override Settings")]
         [SerializeField] private EnemyAIAgent agent;
         [SerializeField] private float maxIdleTime = 5f;
+        [SerializeField] private float patrolRotationSpeed = 1f;
+        [SerializeField] private float chaseRotationSpeed = 10f;
 
-        [Header("Patrol Waypoints")]
-        [Tooltip("Agent moves to these waypoints in order")]
-        [SerializeField] private Transform[] waypoints;
-
-        private PatrolState patrolState;
-        private ChaseState chaseState;
+        private StaticPatrolState patrolState;
+        private StaticChaseState chaseState;
         private CombatState combatState;
+
+        public float PatrolRotationSpeed => patrolRotationSpeed;
+        public float ChaseRotationSpeed => chaseRotationSpeed;
 
         public override void Init()
         {
-            patrolState = new PatrolState(agent, waypoints, maxIdleTime);
-            chaseState = new ChaseState(agent);
+            patrolState = new StaticPatrolState(agent, maxIdleTime, patrolRotationSpeed);
+            chaseState = new StaticChaseState(agent, chaseRotationSpeed);
             combatState = new CombatState(agent);
 
             fsm.DefaultState = patrolState;

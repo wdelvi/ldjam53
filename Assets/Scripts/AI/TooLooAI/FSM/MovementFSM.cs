@@ -9,9 +9,9 @@ namespace TooLoo.AI.FSM
         [Space(10)]
         [Range(1f, 30f)]
         [SerializeField] protected float rotateSpeed = 20f;
-        [Range(1f, 3f)]
+        [Range(0f, 3f)]
         [SerializeField] protected float navigatorWalkSpeed = 2f;
-        [Range(5f, 15f)]
+        [Range(0f, 15f)]
         [SerializeField] protected float navigatorMaxSpeed = 8f;
 
         protected readonly StateMachine fsm = new();

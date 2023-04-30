@@ -129,14 +129,13 @@ namespace TooLoo
 
         public static Vector3 GetRandomCirclePosition(Vector3 sourcePos, float minRadius, float maxRadius)
         {
-            Vector3 position = new();
+            float angle = Random.Range(0, 2 * Mathf.PI); // Random angle in radians
+            float distance = Random.Range(minRadius, maxRadius); // Random distance within the given range
 
-            position = new Vector3(
-                sourcePos.x + RandomNegOrPos() * (minRadius + Random.Range(0f, maxRadius - minRadius)) * Mathf.Cos(Random.Range(0, 2) * Mathf.PI),
-                0,
-                sourcePos.z + RandomNegOrPos() * (minRadius + Random.Range(0f, maxRadius - minRadius)) * Mathf.Sin(Random.Range(0, 2) * Mathf.PI)
-                );
+            float x = sourcePos.x + distance * Mathf.Cos(angle);
+            float z = sourcePos.z + distance * Mathf.Sin(angle);
 
+            Vector3 position = new Vector3(x, 0, z);
             return position;
         }
 

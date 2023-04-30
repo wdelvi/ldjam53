@@ -42,7 +42,7 @@ namespace YATE
 
             Vector3 moveDir = transform.forward * inputDir.z + transform.right * inputDir.x;
 
-            characterController.Move(moveDir * finalMoveSpeed * Time.deltaTime);
+            characterController.SimpleMove(moveDir * finalMoveSpeed);
         }
     }
 }
