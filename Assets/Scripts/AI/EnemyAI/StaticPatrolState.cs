@@ -13,18 +13,37 @@ namespace YATE.AI
         private float idleTime;
 
         private float rotateSpeed;
+        private float rotationRange;
+        private int rotateCount;
 
         private Quaternion targetRotation;
+        private Vector3 currentLookAt;
+        private Queue<Vector3> targetLookAts;
 
-        public StaticPatrolState(EnemyAIAgent agent, float maxIdleTime, float rotateSpeed)
+        public StaticPatrolState(
+            EnemyAIAgent agent, 
+            float maxIdleTime, 
+            float rotateSpeed, 
+            float rotationRange,
+            int rotateCount)
         {
             this.agent = agent;
             this.maxIdleTime = maxIdleTime;
             this.rotateSpeed = rotateSpeed;
+            this.rotationRange = rotationRange;
+            this.rotateCount = rotateCount;
         }
 
         public override void OnEnter()
         {
+            Vector3[] positions = Utils.GeneratePositionsOnCircleSection(
+                agent.transform, 
+                agent.Sensor.Radius, 
+                rotationRange, 
+                rotateCount);
+
+            targetLookAts = new Queue<Vector3>(positions);
+            currentLookAt = targetLookAts.Dequeue();
             targetRotation = GetTargetRotation();
         }
 
@@ -35,13 +54,13 @@ namespace YATE.AI
 
         public override void OnUpdate()
         {
-            if (agent.transform.rotation != targetRotation)
+            if (Quaternion.Angle(agent.transform.rotation, targetRotation) <= 1f)
             {
-                HandleRotation();
+                HandleWaiting();
             }
             else
             {
-                HandleWaiting();
+                HandleRotation();
             }
         }
 
@@ -56,13 +75,15 @@ namespace YATE.AI
             {
                 waitTimer = 0f;
                 idleTime = Random.Range(1f, maxIdleTime);
+                targetLookAts.Enqueue(currentLookAt);
+                currentLookAt = targetLookAts.Dequeue();
                 targetRotation = GetTargetRotation();
             }
         }
         
         private Quaternion GetTargetRotation()
         {
-            Vector3 facing = Utils.GetRandomCirclePosition(agent.transform.position, 1f, agent.Sensor.Radius) - agent.transform.position;
+            Vector3 facing = currentLookAt - agent.transform.position;
             facing.y = 0f;
             facing.Normalize();
 

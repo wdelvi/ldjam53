@@ -160,6 +160,10 @@ MonoBehaviour:
   navigatorMaxSpeed: 0
   agent: {fileID: 1786397689088303980}
   maxIdleTime: 5
+  patrolRotationSpeed: 1
+  chaseRotationSpeed: 10
+  rotationRange: 180
+  rotateCount: 5
 --- !u!114 &1786397689088303976
 MonoBehaviour:
   m_ObjectHideFlags: 0
