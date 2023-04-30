@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e444e5f947e2a7409a1eaa10f9fa16e, type: 3}
-  m_Name: Footstep_SC
+  m_Name: S-Walk_SC
   m_EditorClassIdentifier: 
   internals:
     data:
@@ -18,22 +18,22 @@ MonoBehaviour:
       previewAudioMixerGroup: {fileID: 0}
       expandPreview: 0
       expandAudioClips: 1
-      expandSettings: 0
+      expandSettings: 1
       previewCurves: 1
       audioMixerGroup: {fileID: 0}
       priority: 0.5
       distanceEnabled: 1
       distanceScale: 100
       preventEndClicks: 1
-      loopEnabled: 0
-      followPosition: 0
-      stopIfTransformIsNull: 0
-      randomStartPosition: 0
+      loopEnabled: 1
+      followPosition: 1
+      stopIfTransformIsNull: 1
+      randomStartPosition: 1
       randomStartPositionMin: 0
       randomStartPositionMax: 1
       startPosition: 0
       reverse: 0
-      neverStealVoice: 0
+      neverStealVoice: 1
       neverStealVoiceEffects: 0
       lockAxisEnable: 0
       lockAxis: 2
@@ -164,7 +164,7 @@ MonoBehaviour:
       pitchSemitone: 0
       pitchRatio: 1
       pitchRandomEnable: 1
-      pitchRandomRangeSemitoneBipolar: 0.25
+      pitchRandomRangeSemitoneBipolar: 5.8
       pitchIntensityEnable: 0
       pitchIntensityLowSemitone: -12
       pitchIntensityLowRatio: 0.5
