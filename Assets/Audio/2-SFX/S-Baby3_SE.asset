@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b80e83c0feb1444db6d74f0748b6ec9, type: 3}
-  m_Name: S-Walk_SE
+  m_Name: S-Baby3_SE
   m_EditorClassIdentifier: 
   internals:
     data:
@@ -19,10 +19,10 @@ MonoBehaviour:
       expandTimeline: 1
       expandPreview: 0
       expandSettings: 1
-      expandTriggerOnPlay: 1
-      expandTriggerOnStop: 1
-      expandTriggerOnTail: 1
-      expandAllSoundTag: 1
+      expandTriggerOnPlay: 0
+      expandTriggerOnStop: 0
+      expandTriggerOnTail: 0
+      expandAllSoundTag: 0
       timelineSoundContainerData:
       - delay: 0
         volumeRatio: 1
@@ -226,4 +226,4 @@ MonoBehaviour:
         soundEvent:
         - {fileID: 0}
     soundContainers:
-    - {fileID: 11400000, guid: f630684a5e556ed4b9a8e9622603436a, type: 2}
+    - {fileID: 11400000, guid: b1d1133b8e600804397cd995129f2ac5, type: 2}
