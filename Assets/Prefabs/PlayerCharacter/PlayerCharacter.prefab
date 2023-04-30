@@ -97,6 +97,7 @@ MonoBehaviour:
   reduceRate: 1
   discomfortOnSprint: 2
   discomfortOnDamage: 0.5
+  discomfort: 0
 --- !u!1 &8481161839248988859
 GameObject:
   m_ObjectHideFlags: 0
