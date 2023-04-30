@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e444e5f947e2a7409a1eaa10f9fa16e, type: 3}
-  m_Name: snip_SC
+  m_Name: S-Baby1_SC
   m_EditorClassIdentifier: 
   internals:
     data:
@@ -18,17 +18,17 @@ MonoBehaviour:
       previewAudioMixerGroup: {fileID: 0}
       expandPreview: 0
       expandAudioClips: 1
-      expandSettings: 1
+      expandSettings: 0
       previewCurves: 1
       audioMixerGroup: {fileID: 0}
       priority: 0.5
       distanceEnabled: 1
       distanceScale: 100
       preventEndClicks: 1
-      loopEnabled: 1
-      followPosition: 1
-      stopIfTransformIsNull: 1
-      randomStartPosition: 1
+      loopEnabled: 0
+      followPosition: 0
+      stopIfTransformIsNull: 0
+      randomStartPosition: 0
       randomStartPositionMin: 0
       randomStartPositionMax: 1
       startPosition: 0
@@ -647,5 +647,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
     audioClips:
-    - {fileID: 8300000, guid: 8fe62eac418253d428737c365bcfe567, type: 3}
-    - {fileID: 8300000, guid: 108f51b352401f547ad9791049cbe883, type: 3}
+    - {fileID: 8300000, guid: c979ace5426c1504e8e2301889206827, type: 3}
+    - {fileID: 8300000, guid: 24f147883fc149942ab77b4f603c2067, type: 3}
+    - {fileID: 8300000, guid: d0dcb86b34fcccd4e8d3e9b07c7ca0e3, type: 3}
+    - {fileID: 8300000, guid: 2d9516fdfd63d4448a960aed483dc95f, type: 3}
