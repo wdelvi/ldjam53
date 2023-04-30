@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 8481161838923922038}
-  moveSpeed: 10
+  moveSpeed: 5
 --- !u!114 &8481161838923922037
 MonoBehaviour:
   m_ObjectHideFlags: 0
