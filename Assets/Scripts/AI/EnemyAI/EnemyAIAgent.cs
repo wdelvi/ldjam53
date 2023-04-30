@@ -7,10 +7,34 @@ namespace YATE.AI
 {
     public class EnemyAIAgent : AIAgent
     {
-        [Header("YATE Enemy Agent Settings")]
-        [Tooltip("Where the agent will generally patrol around")]
-        [SerializeField] private Transform anchorPoint;
+        [Header("Combat Settings")]
+        [SerializeField] protected float attackRange = 2f;
 
-        public Transform AnchorPoint => anchorPoint;
+        protected PlayerCharacter playerCharacterTarget;
+
+        public float AttackRange => attackRange;
+        public PlayerCharacter PlayerCharacterTarget => playerCharacterTarget;
+
+        public void SetTarget(PlayerCharacter target)
+        {
+            playerCharacterTarget = target;
+            interactableTarget = null;
+            targetPosition = target.transform.position;
+            targetInteractRange = attackRange;
+        }
+
+        public void SetTarget(PlayerCharacter target, float range)
+        {
+            playerCharacterTarget = target;
+            interactableTarget = null;
+            targetPosition = target.transform.position;
+            targetInteractRange = range;
+        }
+
+        public override void ClearTarget()
+        {
+            base.ClearTarget();
+            playerCharacterTarget = null;
+        }
     }
 }

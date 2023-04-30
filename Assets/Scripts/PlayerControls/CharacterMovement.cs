@@ -9,7 +9,9 @@ namespace YATE
         [SerializeField] private CharacterController characterController;
 
         [Header("Movement Settings")]
-        [SerializeField] private float moveSpeed = 10f;
+        [SerializeField] private float moveSpeed = 5f;
+
+        private float finalMoveSpeed;
 
         // Update is called once per frame
         void Update()
@@ -29,9 +31,18 @@ namespace YATE
             if (Input.GetKey(KeyCode.A)) inputDir.x = -1f;
             if (Input.GetKey(KeyCode.D)) inputDir.x = 1f;
 
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                finalMoveSpeed = moveSpeed * 2f;
+            }
+            else
+            {
+                finalMoveSpeed = moveSpeed;
+            }
+
             Vector3 moveDir = transform.forward * inputDir.z + transform.right * inputDir.x;
 
-            characterController.Move(moveDir * moveSpeed * Time.deltaTime);
+            characterController.SimpleMove(moveDir * finalMoveSpeed);
         }
     }
 }

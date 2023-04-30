@@ -7,7 +7,7 @@ namespace YATE.AI
 {
     public class EnemyAIBrain : AIBrain
     {
-        [SerializeField] private EnemyAIAgent agent;
+        [SerializeField] protected EnemyAIAgent agent;
 
         public override void Init()
         {
@@ -26,9 +26,13 @@ namespace YATE.AI
         }
 
         // TODO - Implement reaction to player detection
-        private void OnDetectedPlayer()
+        protected virtual void OnDetectedPlayer(PlayerCharacter player)
         {
-            Debug.Log("Detected Player!!");
+            if (agent.PlayerCharacterTarget is null)
+            {
+                agent.SetTarget(player);
+                (agent.MovementAI as EnemyMovementAI).OnAcquireTarget();
+            }
         }
     }
 }

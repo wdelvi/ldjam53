@@ -129,14 +129,13 @@ namespace TooLoo
 
         public static Vector3 GetRandomCirclePosition(Vector3 sourcePos, float minRadius, float maxRadius)
         {
-            Vector3 position = new();
+            float angle = Random.Range(0, 2 * Mathf.PI); // Random angle in radians
+            float distance = Random.Range(minRadius, maxRadius); // Random distance within the given range
 
-            position = new Vector3(
-                sourcePos.x + RandomNegOrPos() * (minRadius + Random.Range(0f, maxRadius - minRadius)) * Mathf.Cos(Random.Range(0, 2) * Mathf.PI),
-                0,
-                sourcePos.z + RandomNegOrPos() * (minRadius + Random.Range(0f, maxRadius - minRadius)) * Mathf.Sin(Random.Range(0, 2) * Mathf.PI)
-                );
+            float x = sourcePos.x + distance * Mathf.Cos(angle);
+            float z = sourcePos.z + distance * Mathf.Sin(angle);
 
+            Vector3 position = new Vector3(x, 0, z);
             return position;
         }
 
@@ -155,6 +154,24 @@ namespace TooLoo
             return positions;
         }
 
+        public static Vector3[] GeneratePositionsOnCircleSection(Transform sourceTransform, float radius, float angleRange, int numberOfPositions)
+        {
+            Vector3[] positions = new Vector3[numberOfPositions];
+            float angleOffset = Mathf.Atan2(sourceTransform.forward.z, sourceTransform.forward.x); // Calculate source forward angle
+            float angleStep = angleRange / (numberOfPositions - 1); // Angle step between positions
+
+            for (int i = 0; i < numberOfPositions; i++)
+            {
+                float angle = (angleStep * i - angleRange / 2) * Mathf.Deg2Rad + angleOffset; // Calculate angle for each position
+
+                float x = sourceTransform.position.x + radius * Mathf.Cos(angle);
+                float z = sourceTransform.position.z + radius * Mathf.Sin(angle);
+
+                positions[i] = new Vector3(x, 0, z);
+            }
+
+            return positions;
+        }
 
         public static int RandomNegOrPos()
         {
