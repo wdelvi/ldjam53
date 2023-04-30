@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Cason_Body_Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 322
+        width: 91
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c44de3c83fdb504ca96bc7ddc84931c
+      internalID: 1655310964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cason_Body_Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 278
+        width: 83
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a409f66351c68c645968201e5d73bd2a
+      internalID: 1499684147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cason_Body_Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 285
+        width: 89
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47fd4a47adbf114fabf53696f8b3801
+      internalID: 943630669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cason_Body_Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 7
+        width: 124
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874e208b55fbda64a8630e9716a9e6c0
+      internalID: -1003102106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cason_Body_Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 15
+        width: 72
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2506bc7a9972a794295ac4a3b982c0a7
+      internalID: 922208090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cason_Body_Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 10
+        width: 77
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2541a00a96766b54a94b4adc8c3751dd
+      internalID: 437663505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +240,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cason_Body_Sprite Sheet_0: 1655310964
+      Cason_Body_Sprite Sheet_1: 1499684147
+      Cason_Body_Sprite Sheet_2: 943630669
+      Cason_Body_Sprite Sheet_3: -1003102106
+      Cason_Body_Sprite Sheet_4: 1991130602
+      Cason_Body_Sprite Sheet_5: 922208090
+      Cason_Body_Sprite Sheet_6: 437663505
+      Cason_Body_Sprite Sheet_7: -1755232053
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
