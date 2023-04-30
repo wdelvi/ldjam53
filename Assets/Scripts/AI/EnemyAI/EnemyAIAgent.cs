@@ -7,10 +7,10 @@ namespace YATE.AI
 {
     public class EnemyAIAgent : AIAgent
     {
-        [Header("YATE Enemy Agent Settings")]
-        [Tooltip("Where the agent will generally patrol around")]
-        [SerializeField] private Transform anchorPoint;
+        //[Header("YATE Enemy Agent Settings")]
+        //[Tooltip("Where the agent will generally patrol around")]
+        //[SerializeField] private Transform anchorPoint;
 
-        public Transform AnchorPoint => anchorPoint;
+        //public Transform AnchorPoint => anchorPoint;
     }
 }

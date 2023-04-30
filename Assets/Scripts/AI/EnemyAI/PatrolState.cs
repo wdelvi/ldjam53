@@ -1,52 +1,57 @@
 using System;
 using UnityEngine;
 using TooLoo;
+using System.Collections.Generic;
 
 namespace YATE.AI
 {
     public class PatrolState : MovementState
     {
-        private Vector3 destination;
+        private Queue<Transform> waypoints;
 
         public event Action OnAcquireTarget;
 
+        private Transform currentWaypoint;
+        private int waypointIndex;
         private float waitTimer;
         private float maxIdleTime;
         private float idleTime;
 
-        public PatrolState(EnemyAIAgent agent, float maxIdleTime)
+        public PatrolState(EnemyAIAgent agent, Transform[] waypoints, float maxIdleTime)
         {
             this.agent = agent;
+            this.waypoints = new Queue<Transform>(waypoints);
             this.maxIdleTime = maxIdleTime;
         }
 
         public override void OnEnter()
         {
-            destination = default;
             idleTime = UnityEngine.Random.Range(1f, maxIdleTime);
         }
 
         public override void OnUpdate()
         {
-            if (agent.AgentTarget != null)
+            //if (agent.AgentTarget != null)
+            //{
+            //    OnAcquireTarget?.Invoke();
+            //    return;
+            //}
+
+            if (currentWaypoint is null)
             {
-                OnAcquireTarget?.Invoke();
-                return;
+                currentWaypoint = waypoints.Dequeue();
             }
 
-            HandleRotation();
-
-            if (destination == default)
-            {
-                destination = Utils.GetRandomNavMeshPosition(agent.AnchorPoint.position, 20f);
-                agent.Navigator.SetDestination(destination);
-                return;
-            }
-
-            if (Vector3.Distance(destination, agent.transform.position) <= 1f)
+            if (Vector3.Distance(currentWaypoint.position, agent.transform.position) <= 1f)
             {
                 HandleWaiting();
             }
+            else
+            {
+                agent.Navigator.SetDestination(currentWaypoint.position);
+            }
+
+            HandleRotation();
         }
 
         private void HandleWaiting()
@@ -60,8 +65,8 @@ namespace YATE.AI
             {
                 waitTimer = 0f;
                 idleTime = UnityEngine.Random.Range(1f, maxIdleTime);
-                agent.Navigator.ResetPath();
-                destination = default;
+                waypoints.Enqueue(currentWaypoint);
+                currentWaypoint = waypoints.Dequeue();
             }
         }
     }

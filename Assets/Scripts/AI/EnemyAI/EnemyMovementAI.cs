@@ -12,11 +12,15 @@ namespace YATE.AI
         [Header("YATE Enemy Movement AI Settings")]
         [SerializeField] private float maxIdleTime = 5f;
 
+        [Header("Patrol Waypoints")]
+        [Tooltip("Agent moves to these waypoints in order")]
+        [SerializeField] private Transform[] waypoints;
+
         private PatrolState patrolState;
 
         public override void Init()
         {
-            patrolState = new PatrolState(agent, maxIdleTime);
+            patrolState = new PatrolState(agent, waypoints, maxIdleTime);
             fsm.DefaultState = patrolState;
         }
 
