@@ -7,6 +7,8 @@ namespace YATE
 {
     public class BabyDiscomfort : MonoBehaviour
     {
+        [SerializeField] private CharacterMovement characterMovement;
+
         [SerializeField] private float startingAmount = 0f;
 
         [Tooltip("Passive discomfort reduction per second")]
@@ -34,7 +36,7 @@ namespace YATE
                 discomfort = Mathf.Clamp(discomfort - reduceRate * Time.deltaTime, 0f, 100f);
             }
 
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (characterMovement.IsSprinting)
             {
                 discomfort = Mathf.Clamp(discomfort + discomfortOnSprint * Time.deltaTime, 0f, 100f);
             }
