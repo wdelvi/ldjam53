@@ -154,6 +154,24 @@ namespace TooLoo
             return positions;
         }
 
+        public static Vector3[] GeneratePositionsOnCircleSection(Transform sourceTransform, float radius, float angleRange, int numberOfPositions)
+        {
+            Vector3[] positions = new Vector3[numberOfPositions];
+            float angleOffset = Mathf.Atan2(sourceTransform.forward.z, sourceTransform.forward.x); // Calculate source forward angle
+            float angleStep = angleRange / (numberOfPositions - 1); // Angle step between positions
+
+            for (int i = 0; i < numberOfPositions; i++)
+            {
+                float angle = (angleStep * i - angleRange / 2) * Mathf.Deg2Rad + angleOffset; // Calculate angle for each position
+
+                float x = sourceTransform.position.x + radius * Mathf.Cos(angle);
+                float z = sourceTransform.position.z + radius * Mathf.Sin(angle);
+
+                positions[i] = new Vector3(x, 0, z);
+            }
+
+            return positions;
+        }
 
         public static int RandomNegOrPos()
         {
