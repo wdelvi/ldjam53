@@ -13,6 +13,9 @@ namespace YATE
 
         private float finalMoveSpeed;
 
+        public System.Action OnSprintStart;
+        public System.Action OnSprintStop;
+
         // Update is called once per frame
         void Update()
         {
