@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Grunt_Body_Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 106
+        width: 120
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bedd3fb65ad91448c8804a24585c85
+      internalID: 1444497205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grunt_Body_Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 257
+        width: 93
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bda4dd412b2872419eb99e6581c2112
+      internalID: -1195865052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grunt_Body_Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 267
+        width: 92
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8aabb88596c31418c797088d5fe238
+      internalID: -1473236060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grunt_Body_Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 71
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e3180bc7d921c4a9beeed4fb7edd36
+      internalID: -1054415137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grunt_Body_Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 8
+        width: 79
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b97c823b148ce439b045763e663fce
+      internalID: 1677404161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +219,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Grunt_Body_Sprite Sheet_0: 1444497205
+      Grunt_Body_Sprite Sheet_1: -1195865052
+      Grunt_Body_Sprite Sheet_2: -1473236060
+      Grunt_Body_Sprite Sheet_3: -410517203
+      Grunt_Body_Sprite Sheet_4: -1054415137
+      Grunt_Body_Sprite Sheet_5: 1677404161
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

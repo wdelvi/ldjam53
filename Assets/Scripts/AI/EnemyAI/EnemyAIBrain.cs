@@ -8,6 +8,7 @@ namespace YATE.AI
     public class EnemyAIBrain : AIBrain
     {
         [SerializeField] protected EnemyAIAgent agent;
+        [SerializeField] protected AIAction attackAction;
 
         public override void Init()
         {
@@ -22,7 +23,7 @@ namespace YATE.AI
 
         public override void DecideBehaviour()
         {
-
+            
         }
 
         // TODO - Implement reaction to player detection
@@ -32,6 +33,12 @@ namespace YATE.AI
             {                
                 agent.SetTarget(agent.FOV.visibleTargets[0].GetComponent<PlayerCharacter>());
                 (agent.MovementAI as EnemyMovementAI).OnAcquireTarget();
+            }
+
+            if (agent.ActionRunner.CurrentAction?.Id != attackAction.Id)
+            {
+                agent.CurrentActionId = attackAction.Id;
+                agent.ActionRunner.OnSelectedAction();
             }
         }
     }
