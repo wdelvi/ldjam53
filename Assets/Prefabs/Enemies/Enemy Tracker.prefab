@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39474ac166fd84147a0da2a41de50db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 
   debug: 0
   navigator: {fileID: 1786397689088303981}
   sensor: {fileID: 0}

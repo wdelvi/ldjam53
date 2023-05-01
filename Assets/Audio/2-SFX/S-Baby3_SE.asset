@@ -21,7 +21,7 @@ MonoBehaviour:
       expandSettings: 1
       expandTriggerOnPlay: 0
       expandTriggerOnStop: 0
-      expandTriggerOnTail: 0
+      expandTriggerOnTail: 1
       expandAllSoundTag: 0
       timelineSoundContainerData:
       - delay: 0
@@ -124,9 +124,9 @@ MonoBehaviour:
       triggerOnStopSoundEvents:
       - {fileID: 0}
       triggerOnStopWhichToPlay: 0
-      triggerOnTailEnable: 0
+      triggerOnTailEnable: 1
       triggerOnTailSoundEvents:
-      - {fileID: 0}
+      - {fileID: 11400000, guid: 4520f21ef211f4442a819091026be87e, type: 2}
       triggerOnTailWhichToPlay: 0
       triggerOnTailLength: 0
       triggerOnTailBpm: 120

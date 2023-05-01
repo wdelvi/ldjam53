@@ -85,6 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
+  enemiesInPursuit: []
 --- !u!114 &8438818831675787105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,9 +101,11 @@ MonoBehaviour:
   characterMovement: {fileID: 8481161838923922036}
   startingAmount: 0
   reduceRate: 1
-  discomfortOnSprint: 2
+  discomfortOnSprint: 20
   discomfortOnDamage: 0.5
+  crySoundEvent: {fileID: 11400000, guid: 4520f21ef211f4442a819091026be87e, type: 2}
   discomfort: 0
+  isCrying: 0
 --- !u!114 &961760053565519889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,7 +120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterMovement: {fileID: 8481161838923922036}
   walkingSoundEvent: {fileID: 11400000, guid: 75487b07ca0f6924ea049b9757262d32, type: 2}
-  sprintingSoundEvent: {fileID: 0}
+  sprintingSoundEvent: {fileID: 11400000, guid: c4e2ae790e13ea54d8a6fcaa20b67df1,
+    type: 2}
   isPlayingWalkingFootSteps: 0
   isPlayingSprintingFootSteps: 0
 --- !u!1 &8481161839248988859

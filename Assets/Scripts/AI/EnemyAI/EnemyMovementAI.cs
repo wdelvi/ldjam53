@@ -22,7 +22,7 @@ namespace YATE.AI
         public override void Init()
         {
             patrolState = new PatrolState(agent, waypoints, maxIdleTime);
-            chaseState = new ChaseState(agent);
+            chaseState = new ChaseState(agent, agent.FOV.ViewRadius);
             combatState = new CombatState(agent);
 
             fsm.DefaultState = patrolState;
@@ -64,8 +64,19 @@ namespace YATE.AI
 
         private void OnTargetGone()
         {
+            agent.PlayerCharacterTarget.RemoveEnemyInPursuit(agent);
             agent.ClearTarget();
             fsm.TransitionTo(patrolState);
+        }
+
+        public void SetChaseDistance(float distance)
+        {
+            chaseState.SetChaseDistance(distance);
+        }
+
+        public void ResetChaseDistance()
+        {
+            chaseState.ResetChaseDistance();
         }
     }
 }
