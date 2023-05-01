@@ -70,16 +70,18 @@ namespace YATE.AI
         private void OnEnteredCombatRange()
         {
             fsm.TransitionTo(combatState);
-            Debug.Log("Attack!");
+            agent.ActionRunner.OnReachedActionTarget();
         }
 
         private void OnTargetOutsideCombatRange()
         {
             fsm.TransitionTo(chaseState);
+            agent.ActionRunner.StopAction();
         }
 
         private void OnTargetGone()
         {
+            agent.PlayerCharacterTarget.RemoveEnemyInPursuit(agent);
             agent.ClearTarget();
             fsm.TransitionTo(patrolState);
         }

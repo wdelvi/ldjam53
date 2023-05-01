@@ -8,30 +8,43 @@ namespace YATE.AI
     public class EnemyAIBrain : AIBrain
     {
         [SerializeField] protected EnemyAIAgent agent;
+        [SerializeField] protected AIAction attackAction;
 
         public override void Init()
         {
             base.Init();
-            (agent.Sensor as EnemyVisualSensor).OnDetectedPlayer += OnDetectedPlayer;
+            agent.FOV.OnDetectedTarget += OnDetectedPlayer;
         }
 
         protected void OnDisable()
         {
-            (agent.Sensor as EnemyVisualSensor).OnDetectedPlayer -= OnDetectedPlayer;
+            agent.FOV.OnDetectedTarget -= OnDetectedPlayer;
         }
 
         public override void DecideBehaviour()
         {
-
+            
         }
 
         // TODO - Implement reaction to player detection
-        protected virtual void OnDetectedPlayer(PlayerCharacter player)
+        protected virtual void OnDetectedPlayer()
+        {
+            OnDetectedPlayer(agent.FOV.visibleTargets[0].GetComponent<PlayerCharacter>());
+        }
+
+        public virtual void OnDetectedPlayer(PlayerCharacter playerCharacter)
         {
             if (agent.PlayerCharacterTarget is null)
             {
-                agent.SetTarget(player);
+                agent.SetTarget(playerCharacter);
+                agent.PlayerCharacterTarget.AddEnemyInPursuit(agent);
                 (agent.MovementAI as EnemyMovementAI).OnAcquireTarget();
+            }
+
+            if (agent.ActionRunner.CurrentAction?.Id != attackAction.Id)
+            {
+                agent.CurrentActionId = attackAction.Id;
+                agent.ActionRunner.OnSelectedAction();
             }
         }
     }
