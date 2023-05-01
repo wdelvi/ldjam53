@@ -4,12 +4,14 @@ using UnityEngine;
 using YATE.AI;
 using YATE;
 using TooLoo.AI;
+using UnityEditor.Timeline.Actions;
 
 namespace YATE.AI
 {
     public class StaticEnemyAIBrain : AIBrain
     {
         [SerializeField] protected EnemyAIAgent agent;
+        [SerializeField] protected AIAction attackAction;
 
         public override void Init()
         {
@@ -34,6 +36,12 @@ namespace YATE.AI
             {
                 agent.SetTarget(agent.FOV.visibleTargets[0].GetComponent<PlayerCharacter>());
                 (agent.MovementAI as StaticEnemyMovementAI).OnAcquireTarget();
+            }
+
+            if (agent.ActionRunner.CurrentAction?.Id != attackAction.Id)
+            {
+                agent.CurrentActionId = attackAction.Id;
+                agent.ActionRunner.OnSelectedAction();
             }
         }
     }

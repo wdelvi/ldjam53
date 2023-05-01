@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Runner_Body_Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 325
+        width: 64
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe9d57c310fb574885bed4409940c65
+      internalID: -2063736519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runner_Body_Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 130
+        width: 97
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c3f4848ef09f446a28444846eeadd9
+      internalID: -2043718196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runner_Body_Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 321
+        width: 60
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f46f4b1c2670454583ec9edbf8e9c31
+      internalID: -525399221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runner_Body_Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 67
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff56e5f1195850b47b2358cae726dfde
+      internalID: -287414121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Runner_Body_Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 8
+        width: 70
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff91b37b9562344dbac1936493aa074
+      internalID: 426103928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +219,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Runner_Body_Sprite Sheet_0: -2063736519
+      Runner_Body_Sprite Sheet_1: -2043718196
+      Runner_Body_Sprite Sheet_2: -525399221
+      Runner_Body_Sprite Sheet_3: -287414121
+      Runner_Body_Sprite Sheet_4: 426103928
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

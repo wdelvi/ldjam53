@@ -5,7 +5,7 @@ namespace TooLoo.AI
 {
     public class AIActionRunner : MonoBehaviour
     {
-        [SerializeField] protected AIAgent blackboard;
+        [SerializeField] protected AIAgent agent;
 
         protected AIAction currentAction;
 
@@ -35,7 +35,7 @@ namespace TooLoo.AI
         {
             if (isRunning)
             {
-                currentAction?.UpdateAction(blackboard);
+                currentAction?.UpdateAction(agent);
             }
         }
 
@@ -47,20 +47,20 @@ namespace TooLoo.AI
         public void OnSelectedAction()
         {
             actionProgress = 0f;
-            currentAction?.StopAction(blackboard);
+            currentAction?.StopAction(agent);
 
-            currentAction = AIAction.Get(blackboard.CurrentActionId);
-            currentAction.OnSelected(blackboard);
+            currentAction = AIAction.Get(agent.CurrentActionId);
+            currentAction.OnSelected(agent);
         }
 
         public void StartAction()
         {
             if (isRunning) return;
 
-            if (currentAction.IsAchievable(blackboard))
+            if (currentAction.IsAchievable(agent))
             {
                 isRunning = true;
-                currentAction.StartAction(blackboard);
+                currentAction.StartAction(agent);
             }
             else
             {
@@ -75,7 +75,7 @@ namespace TooLoo.AI
         {
             isRunning = false;
             actionProgress = 0f;
-            currentAction?.StopAction(blackboard);
+            currentAction?.StopAction(agent);
             currentAction = null;
 
             OnFinishedAction?.Invoke();
