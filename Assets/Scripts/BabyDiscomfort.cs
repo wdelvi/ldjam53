@@ -12,7 +12,8 @@ namespace YATE
 {
     public class BabyDiscomfort : MonoBehaviour
     {
-        [SerializeField] private CharacterMovement characterMovement;
+        private PlayerCharacter playerCharacter;
+        private CharacterMovement characterMovement;
 
         [SerializeField] private float startingAmount = 0f;
 
@@ -56,12 +57,22 @@ namespace YATE
         public event Action<EBabyStatus> OnCryingStart;
         public event Action<EBabyStatus> OnCryingStop;
 
-        public void Init()
+        public void Init(PlayerCharacter playerCharacter)
         {
             discomfort = startingAmount;
             isLowDiscomfort = false;
             isMediumDiscomfort = false;
             isCrying = false;
+
+            this.playerCharacter = playerCharacter;
+            playerCharacter?.GetComponent<CharacterMovement>();
+
+            playerCharacter.OnDie += OnDie;
+        }
+
+        private void OnDisable()
+        {
+            playerCharacter.OnDie -= OnDie;
         }
 
         // Update is called once per frame
@@ -96,6 +107,11 @@ namespace YATE
             {
                 ActivateCrying();
             }
+        }
+
+        private void OnDie()
+        {
+            discomfort = 1000f;
         }
 
         private void DeactivateAllSound()

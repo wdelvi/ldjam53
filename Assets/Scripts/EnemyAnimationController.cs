@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TooLoo;
 using UnityEngine;
 using YATE.AI;
 
@@ -32,7 +33,13 @@ namespace YATE
 
         public void AttackEvent()
         {
-            Debug.Log("Attacked!");
+            if (agent.FOV.TargetInFOV
+                && Vector3.Distance(agent.transform.position, agent.PlayerCharacterTarget.transform.position) <= agent.TargetInteractRange)
+            {
+                agent.PlayerCharacterTarget.TakeDamage(agent.AttackDamage);
+                Debug.Log("Attacked!");
+            }
+
         }
     }
 }

@@ -7,7 +7,8 @@ namespace YATE
 {
     public class CharacterMovement : MonoBehaviour
     {
-        [SerializeField] private CharacterController characterController;
+        private CharacterController characterController;
+        private PlayerCharacter playerCharacter;
 
         [Header("Movement Settings")]
         [SerializeField] private float moveSpeed = 5f;
@@ -15,21 +16,40 @@ namespace YATE
         [SerializeField, ReadOnly] private bool isSprinting;
         [SerializeField, ReadOnly] private float finalMoveSpeed;
 
+        private bool allowInput;
+
         public bool IsMoving => characterController.velocity.magnitude > 0.1f;
         public bool IsSprinting => isSprinting;
 
-        public void Init()
+        public void Init(PlayerCharacter playerCharacter)
         {
+            allowInput = true;
 
+            this.playerCharacter = playerCharacter;
+            characterController = playerCharacter.GetComponent<CharacterController>();
+
+            playerCharacter.OnDie += OnDie;
+        }
+
+        private void OnDisable()
+        {
+            playerCharacter.OnDie -= OnDie;
         }
 
         // Update is called once per frame
         void Update()
         {
+            if (!allowInput) return; 
+
             if (characterController != null)
             {
                 HandleMovement();
             }
+        }
+
+        private void OnDie()
+        {
+            allowInput = false;
         }
 
         private void HandleMovement()
