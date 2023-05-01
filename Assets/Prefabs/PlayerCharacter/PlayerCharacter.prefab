@@ -106,9 +106,19 @@ MonoBehaviour:
   reduceRate: 1
   discomfortOnSprint: 20
   discomfortOnDamage: 0.5
-  crySoundEvent: {fileID: 11400000, guid: 4520f21ef211f4442a819091026be87e, type: 2}
+  lowDiscomfortMin: 30
+  lowDiscomfortMax: 60
+  lowDiscomfortSound: {fileID: 11400000, guid: 4520f21ef211f4442a819091026be87e, type: 2}
+  mediumDiscomfortMin: 60
+  mediumDiscomfortMax: 100
+  mediumDiscomfortSound: {fileID: 11400000, guid: e48bde5593b645448a63e539679a8baa,
+    type: 2}
+  cryingDiscomfortThreshold: 100
+  crySoundEvent: {fileID: 11400000, guid: 21fbb466800efad499adc2a6b58da697, type: 2}
   discomfort: 0
   isCrying: 0
+  isLowDiscomfort: 0
+  isMediumDiscomfort: 0
 --- !u!114 &961760053565519889
 MonoBehaviour:
   m_ObjectHideFlags: 0
