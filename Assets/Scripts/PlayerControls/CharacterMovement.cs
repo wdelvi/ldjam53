@@ -18,6 +18,11 @@ namespace YATE
         public bool IsMoving => characterController.velocity.magnitude > 0.1f;
         public bool IsSprinting => isSprinting;
 
+        public void Init()
+        {
+
+        }
+
         // Update is called once per frame
         void Update()
         {

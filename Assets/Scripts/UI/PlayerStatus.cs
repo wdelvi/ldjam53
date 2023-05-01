@@ -4,16 +4,6 @@ using UnityEngine;
 
 namespace YATE.UI
 {
-    public enum ECasonStatus
-    {
-        Sighted, Unsighted
-    }
-
-    public enum EBabyStatus
-    {
-        Panicked, Unpanicked
-    }
-
     public class PlayerStatus : MonoBehaviour
     {
         [SerializeField] private PlayerCharacter playerCharacter;
@@ -38,7 +28,10 @@ namespace YATE.UI
             unsighted_babyPanicked.SetActive(false);
             sighted_babyUnpanicked.SetActive(false);
             sighted_babyPanicked.SetActive(false);
+        }
 
+        private void OnEnable()
+        {
             playerCharacter.OnSighted += UpdateCasonStatus;
             playerCharacter.OnUnsighted += UpdateCasonStatus;
 

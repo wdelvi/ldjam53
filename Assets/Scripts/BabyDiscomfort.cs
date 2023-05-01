@@ -34,8 +34,7 @@ namespace YATE
         public event Action<EBabyStatus> OnCryingStart;
         public event Action<EBabyStatus> OnCryingStop;
 
-        // Start is called before the first frame update
-        void Start()
+        public void Init()
         {
             discomfort = startingAmount;
             isCrying = false;
@@ -97,12 +96,15 @@ namespace YATE
         private void AlertAllEnemies()
         {
             List<AIAgent> agents = AIAgent.GetAll();
+
+            if (agents.Count == 0) return;
+
             foreach (AIAgent agent in agents)
             {
                 if (agent as EnemyAIAgent)
                 {
-                    ((agent as EnemyAIAgent).MovementAI as EnemyMovementAI).SetChaseDistance(1000f);
-                    ((agent as EnemyAIAgent).AIBrain as EnemyAIBrain).OnDetectedPlayer(GetComponent<PlayerCharacter>());                    
+                    ((agent as EnemyAIAgent)?.MovementAI as EnemyMovementAI)?.SetChaseDistance(1000f);
+                    ((agent as EnemyAIAgent)?.AIBrain as EnemyAIBrain)?.OnDetectedPlayer(GetComponent<PlayerCharacter>());                    
                 }
             }
         }
@@ -110,11 +112,14 @@ namespace YATE
         private void DeAlertAllEnemies()
         {
             List<AIAgent> agents = AIAgent.GetAll();
+
+            if (agents.Count == 0) return;
+
             foreach (AIAgent agent in agents)
             {
                 if (agent as EnemyAIAgent)
                 {
-                    ((agent as EnemyAIAgent).MovementAI as EnemyMovementAI).ResetChaseDistance();                    
+                    ((agent as EnemyAIAgent)?.MovementAI as EnemyMovementAI)?.ResetChaseDistance();                    
                 }
             }
         }

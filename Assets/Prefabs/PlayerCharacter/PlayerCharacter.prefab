@@ -52,7 +52,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.3
   m_SlopeLimit: 45
-  m_StepOffset: 0.4
+  m_StepOffset: 1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
@@ -85,6 +85,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
+  characterMovement: {fileID: 8481161838923922036}
+  babyDiscomfort: {fileID: 8438818831675787105}
+  footSteps: {fileID: 961760053565519889}
   enemiesInPursuit: []
 --- !u!114 &8438818831675787105
 MonoBehaviour:
