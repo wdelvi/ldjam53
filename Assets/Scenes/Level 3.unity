@@ -24694,7 +24694,7 @@ MonoBehaviour:
     soundEventsExpand: 1
     soundTriggerPart:
     - expandSoundEvent: 1
-      soundEvent: {fileID: 11400000, guid: c7aa99ee93cc51b4586f13fd0e2ac4ae, type: 2}
+      soundEvent: {fileID: 11400000, guid: 5c1a7e50a0a8e3e43a528cc08f5abf5a, type: 2}
       soundEventModifier:
         volumeDecibel: 0
         volumeRatio: 1

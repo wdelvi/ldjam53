@@ -21,7 +21,7 @@ MonoBehaviour:
       expandSettings: 1
       expandTriggerOnPlay: 0
       expandTriggerOnStop: 0
-      expandTriggerOnTail: 0
+      expandTriggerOnTail: 1
       expandAllSoundTag: 0
       timelineSoundContainerData:
       - delay: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
         startPosition: 0
         reverse: 0
         stereoPan: 0
-        polyphony: 1
+        polyphony: 2
         distanceScale: 1
         distortionIncrease: 0
         fadeInLength: 0
@@ -124,13 +124,13 @@ MonoBehaviour:
       triggerOnStopSoundEvents:
       - {fileID: 0}
       triggerOnStopWhichToPlay: 0
-      triggerOnTailEnable: 0
+      triggerOnTailEnable: 1
       triggerOnTailSoundEvents:
-      - {fileID: 0}
+      - {fileID: 11400000}
       triggerOnTailWhichToPlay: 0
-      triggerOnTailLength: 0
+      triggerOnTailLength: 4
       triggerOnTailBpm: 120
-      triggerOnTailBeatLength: 2
+      triggerOnTailBeatLength: 1
       soundTagEnable: 0
       soundTagMode: 1
       soundTagGroups:
