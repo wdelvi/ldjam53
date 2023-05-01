@@ -44,5 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14cf893e4433d2a4d8efb93c26314113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playLevel: PlayerControls
   mainMenu: Main Menu
+  levels:
+  - Level 1
+  - Level 2
+  - Level 3
+  - EndGame
+  spawnPlayerCharacter: 1
+  playerCharacterPrefab: {fileID: 8481161838923922037, guid: ccf0b1b5825dae845bd475ae75c37de3,
+    type: 3}
+  playerStartLocation: {x: -35, y: 0, z: 0}
