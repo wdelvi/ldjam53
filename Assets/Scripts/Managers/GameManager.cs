@@ -93,5 +93,10 @@ namespace YATE
         {
             Application.Quit();
         }
+
+        public PlayerCharacter GetPlayer()
+        {
+            return playerCharacter;
+        }
     }
 }
