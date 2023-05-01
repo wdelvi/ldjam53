@@ -47,6 +47,9 @@ namespace YATE.UI
         [SerializeField] private Image cutsceneImageBox;
         [SerializeField] private List<Sprite> cutsceneImages;
 
+        [Header("Death Screen")]
+        [SerializeField] private GameObject deathScreen;
+
         private bool optionsMenuOn;
         private int imageIndex = 0;
 
@@ -57,6 +60,7 @@ namespace YATE.UI
         {
             playerCharacter.OnSighted -= UpdateCasonStatus;
             playerCharacter.OnUnsighted -= UpdateCasonStatus;
+            playerCharacter.OnDie -= OnDie;
 
             babyDiscomfort.OnCryingStart -= UpdateBabyStatus;
             babyDiscomfort.OnCryingStop -= UpdateBabyStatus;
@@ -69,6 +73,7 @@ namespace YATE.UI
 
             playerCharacter.OnSighted += UpdateCasonStatus;
             playerCharacter.OnUnsighted += UpdateCasonStatus;
+            playerCharacter.OnDie += OnDie;
 
             babyDiscomfort.OnCryingStart += UpdateBabyStatus;
             babyDiscomfort.OnCryingStop += UpdateBabyStatus;
@@ -83,6 +88,22 @@ namespace YATE.UI
         {
             HandleCutscenes();
             HandleOptionsMenu();
+        }
+
+        IEnumerator WaitForDeathScreen(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            deathScreen.SetActive(true);
+        }
+
+        private void OnDie()
+        {
+            StartCoroutine(WaitForDeathScreen(5f));
+        }
+
+        public void InitDeathScreen()
+        {
+            deathScreen.gameObject.SetActive(false);
         }
 
         private void InitOptionsMenu()
@@ -212,6 +233,11 @@ namespace YATE.UI
         public void ExitButton()
         {
             GameManager.Instance.ExitGame();
+        }
+
+        public void RetryButton()
+        {
+            GameManager.Instance.LoadCurrentLevel();
         }
     }
 }

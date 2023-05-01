@@ -84,6 +84,11 @@ namespace YATE
             LoadScene(levels[index]);
         }
 
+        public void LoadCurrentLevel()
+        {
+            LoadScene(SceneManager.GetActiveScene().name);
+        }
+
         public void LoadMainMenu()
         {
             LoadScene(mainMenu);

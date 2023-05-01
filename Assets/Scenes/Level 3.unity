@@ -4612,6 +4612,11 @@ PrefabInstance:
       objectReference: {fileID: 2076984538}
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 1175136530}
+    - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
+        type: 3}
       propertyPath: optionsMenu
       value: 
       objectReference: {fileID: 1263445972}
@@ -16770,6 +16775,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f96b55b0cb62e4001b55a9d3f5be74f8, type: 3}
+--- !u!1 &1175136530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 496864241125877652, guid: 24eedd49c87ef67499029bb8af520042,
+    type: 3}
+  m_PrefabInstance: {fileID: 2076984536}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1179964296
 GameObject:
   m_ObjectHideFlags: 0
@@ -29470,6 +29481,111 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: YATE.UI.LevelUIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731934917707715699, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731934917707715699, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731934917707715699, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 289630350}
+    - target: {fileID: 6731934917707715699, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731934917707715699, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenuButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731934917707715699, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: YATE.UI.LevelUIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731934917707715699, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428832005970038025, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428832005970038025, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428832005970038025, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 289630350}
+    - target: {fileID: 7428832005970038025, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428832005970038025, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428832005970038025, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: YATE.UI.LevelUIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428832005970038025, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790085662106130228, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790085662106130228, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790085662106130228, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 289630350}
+    - target: {fileID: 8790085662106130228, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790085662106130228, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RetryButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790085662106130228, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: YATE.UI.LevelUIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790085662106130228, guid: 24eedd49c87ef67499029bb8af520042,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24eedd49c87ef67499029bb8af520042, type: 3}

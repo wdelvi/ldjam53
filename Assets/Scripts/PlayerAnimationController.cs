@@ -6,7 +6,9 @@ namespace YATE
 {
     public class PlayerAnimationController : MonoBehaviour
     {
-        [SerializeField] private CharacterController characterController;
+        private PlayerCharacter playerCharacter;
+        private CharacterController characterController;
+
         [SerializeField] private Animator animator;
 
         // Start is called before the first frame update
@@ -19,6 +21,24 @@ namespace YATE
         void Update()
         {
             animator.SetFloat("MoveSpeed", characterController.velocity.magnitude);
+        }
+
+        public void Init(PlayerCharacter playerCharacter)
+        {
+            this.playerCharacter = playerCharacter;
+            characterController = playerCharacter.GetComponent<CharacterController>();
+
+            playerCharacter.OnDie += OnDie;
+        }
+
+        private void OnDisable()
+        {
+            playerCharacter.OnDie -= OnDie;
+        }
+
+        private void OnDie()
+        {
+            animator.SetBool("IsAlive", false);
         }
     }
 }

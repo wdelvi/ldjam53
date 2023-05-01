@@ -11,18 +11,22 @@ namespace YATE
 {
     public class PlayerCharacter : MonoBehaviour, ICharacter
     {
+        [SerializeField, ReadOnly] private float health;
         [SerializeField] private float startingHealth = 100f;
 
         [SerializeField] private CharacterMovement characterMovement;
         [SerializeField] private BabyDiscomfort babyDiscomfort;
         [SerializeField] private FootSteps footSteps;
+        [SerializeField] private PlayerAnimationController animationController;
 
-        public bool IsAlive { get; set; } = true;
+        public bool IsAlive => health > 0f;
 
         public bool IsSighted { get; set; } = false;
 
         public event Action<ECasonStatus> OnSighted;
         public event Action<ECasonStatus> OnUnsighted;
+
+        public event Action OnDie;
 
         [Tooltip("For Debugging Only")]
         [SerializeField, ReadOnly] private List<AIAgent> enemiesInPursuit = new();
@@ -32,11 +36,17 @@ namespace YATE
             Init(new Vector3(-35f, 0, 0));
         }
 
+        private void Update()
+        {
+        }
+
         public void Init(Vector3 startingPosition)
         {
-            characterMovement.Init();
-            babyDiscomfort.Init();
+            health = startingHealth;
+            characterMovement.Init(this);
+            babyDiscomfort.Init(this);
             footSteps.Init();
+            animationController.Init(this);
         }
 
         public void AddEnemyInPursuit(AIAgent enemy)
@@ -52,6 +62,17 @@ namespace YATE
             if (enemiesInPursuit.Count == 0)
             {
                 OnUnsighted?.Invoke(ECasonStatus.Unsighted);
+            }
+        }
+
+        public void TakeDamage(float damage)
+        {
+            health -= damage;
+            babyDiscomfort.OnTakeDamage(damage);
+
+            if (health < 0)
+            {
+                OnDie?.Invoke();
             }
         }
     }
