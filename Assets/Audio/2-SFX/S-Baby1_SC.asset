@@ -647,7 +647,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
     audioClips:
-    - {fileID: 8300000, guid: c979ace5426c1504e8e2301889206827, type: 3}
-    - {fileID: 8300000, guid: 24f147883fc149942ab77b4f603c2067, type: 3}
-    - {fileID: 8300000, guid: d0dcb86b34fcccd4e8d3e9b07c7ca0e3, type: 3}
-    - {fileID: 8300000, guid: 2d9516fdfd63d4448a960aed483dc95f, type: 3}
+    - {fileID: 8300000, guid: bb83e1ae748c9d642886a628d42a738f, type: 3}
+    - {fileID: 8300000, guid: 624f3d015a13ce44cb048168ddbac8fb, type: 3}
+    - {fileID: 8300000, guid: fde498f48388f6e408c2888fb6976146, type: 3}
+    - {fileID: 8300000, guid: cbf0d304882208c48b1b02135239632a, type: 3}
