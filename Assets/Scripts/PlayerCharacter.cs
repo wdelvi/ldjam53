@@ -19,6 +19,7 @@ namespace YATE
         public event Action<ECasonStatus> OnSighted;
         public event Action<ECasonStatus> OnUnsighted;
 
+        [Tooltip("For Debugging Only")]
         [SerializeField, ReadOnly] private List<AIAgent> enemiesInPursuit = new();
 
         public void AddEnemyInPursuit(AIAgent enemy)

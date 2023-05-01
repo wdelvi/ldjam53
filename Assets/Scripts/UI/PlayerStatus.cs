@@ -58,7 +58,7 @@ namespace YATE.UI
         // Update is called once per frame
         void Update()
         {
-
+            //UpdateUI();
         }
 
         public void UpdateBabyStatus(EBabyStatus babyStatus)
