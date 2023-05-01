@@ -16,7 +16,8 @@ namespace YATE
 
         [SerializeField] private CharacterMovement characterMovement;
         [SerializeField] private BabyDiscomfort babyDiscomfort;
-        [SerializeField] private FootSteps footSteps;        
+        [SerializeField] private FootSteps footSteps;
+        [SerializeField] private PlayerAnimationController animationController;
 
         public bool IsAlive => health > 0f;
 
@@ -45,6 +46,7 @@ namespace YATE
             characterMovement.Init(this);
             babyDiscomfort.Init(this);
             footSteps.Init();
+            animationController.Init(this);
         }
 
         public void AddEnemyInPursuit(AIAgent enemy)
