@@ -33,11 +33,10 @@ namespace YATE
 
         public void AttackEvent()
         {
-            if (agent.FOV.TargetInFOV
-                && Vector3.Distance(agent.transform.position, agent.PlayerCharacterTarget.transform.position) <= agent.TargetInteractRange)
+            if (Vector3.Distance(agent.transform.position, agent.PlayerCharacterTarget.transform.position) <= agent.TargetInteractRange)
             {
                 agent.PlayerCharacterTarget.TakeDamage(agent.AttackDamage);
-                Debug.Log("Attacked!");
+                //Debug.Log("Attacked!");
             }
 
         }

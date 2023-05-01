@@ -92,16 +92,13 @@ namespace YATE.UI
 
         IEnumerator WaitForDeathScreen(float delay)
         {
-            while (true)
-            {
-                yield return new WaitForSeconds(delay);
-            }
+            yield return new WaitForSeconds(delay);
+            deathScreen.SetActive(true);
         }
 
         private void OnDie()
         {
-            WaitForDeathScreen(5f);
-            deathScreen.SetActive(true);
+            StartCoroutine(WaitForDeathScreen(5f));
         }
 
         public void InitDeathScreen()
@@ -236,6 +233,11 @@ namespace YATE.UI
         public void ExitButton()
         {
             GameManager.Instance.ExitGame();
+        }
+
+        public void RetryButton()
+        {
+            GameManager.Instance.LoadCurrentLevel();
         }
     }
 }

@@ -65,7 +65,7 @@ namespace YATE
             isCrying = false;
 
             this.playerCharacter = playerCharacter;
-            playerCharacter?.GetComponent<CharacterMovement>();
+            characterMovement = playerCharacter?.GetComponent<CharacterMovement>();
 
             playerCharacter.OnDie += OnDie;
         }

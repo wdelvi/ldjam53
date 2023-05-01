@@ -68,7 +68,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6123470047ec38749b4ab2ec019c4c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 8481161838923922038}
   moveSpeed: 7
   isSprinting: 0
   finalMoveSpeed: 0
@@ -84,7 +83,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afcbb6edfcde1964d8466416f5923712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
+  health: 0
+  startingHealth: 10
   characterMovement: {fileID: 8481161838923922036}
   babyDiscomfort: {fileID: 8438818831675787105}
   footSteps: {fileID: 961760053565519889}
@@ -101,7 +101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0992386e6bdc174a8203db6c8e8856a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterMovement: {fileID: 8481161838923922036}
   startingAmount: 0
   reduceRate: 1
   discomfortOnSprint: 20
