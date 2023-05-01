@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Infected Runner_Body_Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 245
+        width: 79
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12da451d877e86418d1cc7c9dad999b
+      internalID: -1764594705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infected Runner_Body_Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 210
+        width: 116
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12add6f8d375b974aa1a8b31ffaf750e
+      internalID: -196706611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infected Runner_Body_Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 243
+        width: 85
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d4ccaa31b17904bb2ded925bf2554e
+      internalID: 1812920004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infected Runner_Body_Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1
+        width: 63
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3194ca90dc51446ab4025151617d5e
+      internalID: -548958654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infected Runner_Body_Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 10
+        width: 72
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51424af71e9346f43b7097835a1b3c87
+      internalID: 1633374210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +219,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Infected Runner_Body_Sprite Sheet_0: -1764594705
+      Infected Runner_Body_Sprite Sheet_1: -196706611
+      Infected Runner_Body_Sprite Sheet_2: 1812920004
+      Infected Runner_Body_Sprite Sheet_3: -548958654
+      Infected Runner_Body_Sprite Sheet_4: 1633374210
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

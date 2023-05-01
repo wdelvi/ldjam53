@@ -47,11 +47,11 @@ namespace YATE
 
             if (moveDir.x < 0f)
             {
-                transform.localScale = new Vector3(Mathf.Abs(defaultLocalScale.x), defaultLocalScale.y, defaultLocalScale.z);
+                transform.localScale = new Vector3(defaultLocalScale.x, defaultLocalScale.y, defaultLocalScale.z);
             }
             else if (moveDir.x > 0f)
             {
-                transform.localScale = new Vector3(-Mathf.Abs(defaultLocalScale.x), defaultLocalScale.y, defaultLocalScale.z);
+                transform.localScale = new Vector3(-defaultLocalScale.x, defaultLocalScale.y, defaultLocalScale.z);
             }
         }
     }
