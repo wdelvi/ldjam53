@@ -29,9 +29,15 @@ namespace YATE.AI
         // TODO - Implement reaction to player detection
         protected virtual void OnDetectedPlayer()
         {
+            OnDetectedPlayer(agent.FOV.visibleTargets[0].GetComponent<PlayerCharacter>());
+        }
+
+        public virtual void OnDetectedPlayer(PlayerCharacter playerCharacter)
+        {
             if (agent.PlayerCharacterTarget is null)
-            {                
-                agent.SetTarget(agent.FOV.visibleTargets[0].GetComponent<PlayerCharacter>());
+            {
+                agent.SetTarget(playerCharacter);
+                agent.PlayerCharacterTarget.AddEnemyInPursuit(agent);
                 (agent.MovementAI as EnemyMovementAI).OnAcquireTarget();
             }
 

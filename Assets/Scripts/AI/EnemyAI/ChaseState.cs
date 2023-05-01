@@ -8,9 +8,24 @@ namespace YATE.AI
         public event Action OnEnteredCombatRange;
         public event Action OnTargetGone;
 
-        public ChaseState(EnemyAIAgent agent)
+        private float defaultChaseDistance;
+        private float chaseDistance;
+
+        public ChaseState(EnemyAIAgent agent, float defaultChaseDistance)
         {
             this.agent = agent;
+            this.defaultChaseDistance = defaultChaseDistance;
+            chaseDistance = defaultChaseDistance;
+        }
+
+        public void SetChaseDistance(float distance)
+        {
+            chaseDistance = distance;
+        }
+
+        public void ResetChaseDistance()
+        {
+            chaseDistance = defaultChaseDistance;
         }
 
         public override void OnEnter()
@@ -29,7 +44,7 @@ namespace YATE.AI
         {
             if (agent.PlayerCharacterTarget is null 
                 || !agent.PlayerCharacterTarget.IsAlive
-                || Vector3.Distance(agent.PlayerCharacterTarget.transform.position, agent.transform.position) > agent.FOV.ViewRadius)
+                || Vector3.Distance(agent.PlayerCharacterTarget.transform.position, agent.transform.position) > chaseDistance)
             {
                 OnTargetGone?.Invoke();
                 return;

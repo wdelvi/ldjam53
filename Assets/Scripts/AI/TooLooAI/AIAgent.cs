@@ -2,11 +2,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using TooLoo.AI.FSM;
+using System.Linq;
 
 namespace TooLoo.AI
 {
     public class AIAgent : MonoBehaviour, ICharacter
     {
+        [SerializeField, ReadOnly] protected string id;
+
         [Header("Debug Option")]
         [SerializeField] protected bool debug = false;
 
@@ -57,6 +60,18 @@ namespace TooLoo.AI
             }
         }
 
+        protected readonly static List<AIAgent> agents = new();
+
+        public static AIAgent Get(string id)
+        {
+            return agents.Where(a => a.id == id).FirstOrDefault();
+        }
+
+        public static List<AIAgent> GetAll()
+        {
+            return agents;
+        }
+
         protected virtual void Start()
         {
             Init();
@@ -64,10 +79,14 @@ namespace TooLoo.AI
 
         public virtual void Init()
         {
+            id = System.Guid.NewGuid().ToString();
+
             sensor?.Init();
             aiBrain?.Init();
             movementAI?.Init();
             actionRunner?.Init();
+
+            agents.Add(this);
         }
 
         public virtual void SetTarget(AIAgent agent)

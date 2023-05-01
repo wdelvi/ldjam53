@@ -5,7 +5,7 @@ using TooLoo;
 
 namespace YATE
 {
-    public class MainLevelUIManager : Singleton<MainLevelUIManager>
+    public class LevelUIManager : Singleton<LevelUIManager>
     {
         [SerializeField] private GameObject optionsMenu;
 

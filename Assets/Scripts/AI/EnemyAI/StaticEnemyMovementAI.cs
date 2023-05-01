@@ -81,6 +81,7 @@ namespace YATE.AI
 
         private void OnTargetGone()
         {
+            agent.PlayerCharacterTarget.RemoveEnemyInPursuit(agent);
             agent.ClearTarget();
             fsm.TransitionTo(patrolState);
         }
