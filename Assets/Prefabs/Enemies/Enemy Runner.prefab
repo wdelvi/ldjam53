@@ -82,6 +82,7 @@ MonoBehaviour:
   animationController: {fileID: 7356773228942197586}
   fov: {fileID: 1409662816190502172}
   attackRange: 2
+  attackDamage: 30
 --- !u!114 &1786397689088303971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   viewRadius: 15
-  viewAngle: 120
+  viewAngle: 90
   meshResolution: 1
   edgeResolveIterations: 4
   edgeDistanceThreshold: 0.5
