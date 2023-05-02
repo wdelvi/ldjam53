@@ -42,7 +42,9 @@ namespace YATE.UI
         [Header("Cut Scenes UI Elements")]
 
         [Space(10)]
-        
+
+        [SerializeField] private bool isEndGame;
+        [SerializeField] private GameObject endGameMenu;
         [SerializeField] private GameObject cutscenes;
         [SerializeField] private Image cutsceneImageBox;
         [SerializeField] private List<Sprite> cutsceneImages;
@@ -70,7 +72,7 @@ namespace YATE.UI
         {
             this.playerCharacter = playerCharacter;
             babyDiscomfort = playerCharacter.GetComponent<BabyDiscomfort>();
-
+            
             playerCharacter.OnSighted += UpdateCasonStatus;
             playerCharacter.OnUnsighted += UpdateCasonStatus;
             playerCharacter.OnDie += OnDie;
@@ -81,6 +83,11 @@ namespace YATE.UI
             InitOptionsMenu();
             InitPlayerStatus();
             InitCutscenes();
+
+            if (isEndGame)
+            {
+                GameManager.Instance.DisableControls();
+            }
         }
 
         // Update is called once per frame
@@ -109,14 +116,14 @@ namespace YATE.UI
         private void InitOptionsMenu()
         {
             optionsMenuOn = false;
-            optionsMenu.SetActive(false);
+            optionsMenu?.SetActive(false);
         }
 
         private void InitPlayerStatus()
         {
             currentBabyStatus = EBabyStatus.Unpanicked;
             currentCasonStatus = ECasonStatus.Unsighted;
-            playerStatus.SetActive(false);
+            playerStatus?.SetActive(false);
         }
 
         private void InitCutscenes()
@@ -203,10 +210,17 @@ namespace YATE.UI
 
                 if (imageIndex > cutsceneImages.Count - 1)
                 {
-                    cutscenes.gameObject.SetActive(false);
+                    if (isEndGame)
+                    {
+                        endGameMenu.SetActive(true);
+                    }
+                    else
+                    {
+                        cutscenes.gameObject.SetActive(false);
 
-                    UpdatePlayerStatusUI();
-                    playerStatus.gameObject.SetActive(true);
+                        UpdatePlayerStatusUI();
+                        playerStatus.gameObject.SetActive(true);
+                    }
                     return;
                 }
 

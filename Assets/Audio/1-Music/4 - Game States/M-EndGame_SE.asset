@@ -126,7 +126,7 @@ MonoBehaviour:
       triggerOnStopWhichToPlay: 0
       triggerOnTailEnable: 1
       triggerOnTailSoundEvents:
-      - {fileID: 0}
+      - {fileID: 11400000}
       triggerOnTailWhichToPlay: 0
       triggerOnTailLength: 5.3932586
       triggerOnTailBpm: 89

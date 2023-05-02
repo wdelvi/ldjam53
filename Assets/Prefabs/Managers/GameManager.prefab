@@ -49,6 +49,7 @@ MonoBehaviour:
   - Level 1
   - Level 2
   - Level 3
+  - End Game
   spawnPlayerCharacter: 1
   playerCharacterPrefab: {fileID: 8481161838923922037, guid: ccf0b1b5825dae845bd475ae75c37de3,
     type: 3}
