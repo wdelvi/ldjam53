@@ -16,14 +16,14 @@ namespace YATE
         [SerializeField, ReadOnly] private bool isSprinting;
         [SerializeField, ReadOnly] private float finalMoveSpeed;
 
-        private bool allowInput;
+        public bool AllowInput { get; set; } = true;
 
         public bool IsMoving => characterController.velocity.magnitude > 0.1f;
         public bool IsSprinting => isSprinting;
 
         public void Init(PlayerCharacter playerCharacter)
         {
-            allowInput = true;
+            //AllowInput = true;
 
             this.playerCharacter = playerCharacter;
             characterController = playerCharacter.GetComponent<CharacterController>();
@@ -39,7 +39,7 @@ namespace YATE
         // Update is called once per frame
         void Update()
         {
-            if (!allowInput) return; 
+            if (!AllowInput) return; 
 
             if (characterController != null)
             {
@@ -49,7 +49,7 @@ namespace YATE
 
         private void OnDie()
         {
-            allowInput = false;
+            AllowInput = false;
         }
 
         private void HandleMovement()

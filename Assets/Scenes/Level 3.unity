@@ -24140,7 +24140,7 @@ PrefabInstance:
     - target: {fileID: 5050949263419558781, guid: df821da40449b45438b9fb0aab43b402,
         type: 3}
       propertyPath: levelToLoad
-      value: EndGame
+      value: End Game
       objectReference: {fileID: 0}
     - target: {fileID: 5050949263419558781, guid: df821da40449b45438b9fb0aab43b402,
         type: 3}

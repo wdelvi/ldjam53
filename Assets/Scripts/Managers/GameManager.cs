@@ -103,5 +103,10 @@ namespace YATE
         {
             return playerCharacter;
         }
+
+        public void DisableControls()
+        {
+            playerCharacter.GetComponent<CharacterMovement>().AllowInput = false;
+        }
     }
 }
