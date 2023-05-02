@@ -3977,6 +3977,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
+      objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
       propertyPath: m_Name
@@ -5809,6 +5814,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
+      objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
       propertyPath: m_Name
@@ -6176,6 +6186,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ChunkMovementBlocker (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017012009167465458, guid: 4e648518ac1fe4d90b716f6ce64f340b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8017012009167465459, guid: 4e648518ac1fe4d90b716f6ce64f340b,
         type: 3}
@@ -7396,6 +7411,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChunkMovementBlocker (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8017012009167465458, guid: 4e648518ac1fe4d90b716f6ce64f340b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8017012009167465459, guid: 4e648518ac1fe4d90b716f6ce64f340b,
         type: 3}
       propertyPath: m_RootOrder
@@ -8017,6 +8037,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ChunkMovementBlocker (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017012009167465458, guid: 4e648518ac1fe4d90b716f6ce64f340b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8017012009167465459, guid: 4e648518ac1fe4d90b716f6ce64f340b,
         type: 3}
@@ -9722,7 +9747,7 @@ PrefabInstance:
     - target: {fileID: 5307031111917880632, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
       propertyPath: m_text
-      value: '*Pant Pant* I guess we found the infected, freaking great'
+      value: '*Pant Pant* I guess we found the infected...'
       objectReference: {fileID: 0}
     - target: {fileID: 5307031111917880632, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -9858,6 +9883,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -11323,6 +11353,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ChunkMovementBlocker (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017012009167465458, guid: 4e648518ac1fe4d90b716f6ce64f340b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8017012009167465459, guid: 4e648518ac1fe4d90b716f6ce64f340b,
         type: 3}
@@ -14853,7 +14888,7 @@ PrefabInstance:
     - target: {fileID: 5307031111917880632, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
       propertyPath: m_text
-      value: "Where are they? Haven\u2019t seen even one of them"
+      value: It's making me nervous that there's nobody here
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126232, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -14964,6 +14999,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -15523,6 +15563,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -18350,6 +18395,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
+      objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
       propertyPath: m_Name
@@ -18996,6 +19046,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
+      objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
       propertyPath: m_Name
@@ -19350,6 +19405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -20306,6 +20366,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -40.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -21560,6 +21625,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -23481,7 +23551,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: "It\u2019s like they were building a wall\u2026 Why did they have to
-        make this so tall?"
+        make it so tall?"
       objectReference: {fileID: 0}
     - target: {fileID: 5307031111917880632, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -23617,6 +23687,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -25087,6 +25162,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -27450,7 +27530,7 @@ PrefabInstance:
     - target: {fileID: 5307031111917880632, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
       propertyPath: m_text
-      value: "They even built these watchtowers\u2026 but where did they go?"
+      value: "These watchtowers\u2026 but not guards?"
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126232, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -27561,6 +27641,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -28584,8 +28669,7 @@ PrefabInstance:
     - target: {fileID: 5307031111917880632, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
       propertyPath: m_text
-      value: "I\u2019m gonna have to climb that\u2026 What\u2019s that even supposed
-        to be?"
+      value: "I\u2019m gonna have to climb that\u2026 aren't I? What even is that?"
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126232, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -28711,6 +28795,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
@@ -29808,6 +29897,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
+      objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
       propertyPath: m_Name
@@ -30473,6 +30567,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
+      objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
       propertyPath: m_Name
@@ -30707,6 +30806,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
+      objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
       propertyPath: m_Name
@@ -30873,6 +30977,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307031113171126235, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2066573547
       objectReference: {fileID: 0}
     - target: {fileID: 5307031113171126239, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
