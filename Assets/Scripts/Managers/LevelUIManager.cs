@@ -109,14 +109,14 @@ namespace YATE.UI
         private void InitOptionsMenu()
         {
             optionsMenuOn = false;
-            optionsMenu.SetActive(false);
+            optionsMenu?.SetActive(false);
         }
 
         private void InitPlayerStatus()
         {
             currentBabyStatus = EBabyStatus.Unpanicked;
             currentCasonStatus = ECasonStatus.Unsighted;
-            playerStatus.SetActive(false);
+            playerStatus?.SetActive(false);
         }
 
         private void InitCutscenes()
