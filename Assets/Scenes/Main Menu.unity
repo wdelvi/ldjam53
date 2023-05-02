@@ -1661,7 +1661,7 @@ MonoBehaviour:
         distortionIncrease: 0
         fadeInLength: 0
         fadeInShape: 2
-        fadeOutLength: 0
+        fadeOutLength: 2
         fadeOutShape: -2
         followPosition: 1
         bypassReverbZones: 0
@@ -1681,7 +1681,7 @@ MonoBehaviour:
         distortionIncreaseUse: 0
         fadeInLengthUse: 0
         fadeInShapeUse: 0
-        fadeOutLengthUse: 0
+        fadeOutLengthUse: 1
         fadeOutShapeUse: 0
         followPositionUse: 0
         bypassReverbZonesUse: 0
@@ -1689,9 +1689,9 @@ MonoBehaviour:
         bypassListenerEffectsUse: 0
       expandModifier: 1
       soundTriggerTodo:
-        onEnableUse: 0
+        onEnableUse: 1
         onDisableUse: 0
-        onStartUse: 1
+        onStartUse: 0
         onDestroyUse: 1
         onTriggerEnterUse: 0
         onTriggerExitUse: 0

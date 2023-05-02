@@ -5,6 +5,7 @@ using TooLoo;
 using UnityEngine.SceneManagement;
 using YATE.UI;
 using Cinemachine;
+using Sonity;
 
 namespace YATE
 {
@@ -75,6 +76,8 @@ namespace YATE
 
         public async void LoadScene(string sceneName)
         {
+            SoundManager soundManager = FindObjectOfType(typeof(SoundManager)) as SoundManager;
+            Destroy(soundManager);
             var scene = SceneManager.LoadSceneAsync(sceneName);
             scene.allowSceneActivation = true;
         }
