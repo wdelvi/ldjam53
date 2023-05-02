@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingAmount: 0
   reduceRate: 5
-  discomfortOnSprint: 40
+  discomfortOnSprint: 45
   discomfortOnDamage: 0.5
   lowDiscomfortMin: 30
   lowDiscomfortMax: 60
