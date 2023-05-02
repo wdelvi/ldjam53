@@ -11,9 +11,11 @@ namespace YATE.AI
         [SerializeField] protected EnemyAnimationController animationController;
         [SerializeField] protected FieldOfView fov;
         [SerializeField] protected float attackRange = 2f;
+        [SerializeField] protected float attackDamage = 30f;
 
         protected PlayerCharacter playerCharacterTarget;
 
+        public float AttackDamage => attackDamage;
         public float AttackRange => attackRange;
         public PlayerCharacter PlayerCharacterTarget => playerCharacterTarget;
         public FieldOfView FOV => fov;

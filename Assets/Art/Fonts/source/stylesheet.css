@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'BMX Radical';
+    src: url('BMXRadical-Bold.eot');
+    src: local('BMX Radical Bold'), local('BMXRadical-Bold'),
+        url('BMXRadical-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BMXRadical-Bold.woff2') format('woff2'),
+        url('BMXRadical-Bold.woff') format('woff'),
+        url('BMXRadical-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BMX Radical';
+    src: url('BMXRadical.eot');
+    src: local('BMX Radical'), local('BMXRadical'),
+        url('BMXRadical.eot?#iefix') format('embedded-opentype'),
+        url('BMXRadical.woff2') format('woff2'),
+        url('BMXRadical.woff') format('woff'),
+        url('BMXRadical.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -50,6 +50,7 @@ namespace YATE
         [SerializeField] private MeshFilter viewMeshFilter;
         private Mesh viewMesh;
 
+        public bool TargetInFOV => visibleTargets.Count > 0;
         public float ViewRadius => viewRadius;
         public float ViewAngle => viewAngle;
 

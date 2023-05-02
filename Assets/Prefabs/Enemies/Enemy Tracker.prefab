@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   viewRadius: 15
-  viewAngle: 120
+  viewAngle: 90
   meshResolution: 1
   edgeResolveIterations: 4
   edgeDistanceThreshold: 0.5
@@ -192,6 +192,7 @@ MonoBehaviour:
   animationController: {fileID: 624580351954839278}
   fov: {fileID: 4198486232901109529}
   attackRange: 2
+  attackDamage: 30
 --- !u!114 &5214394954274145680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,7 +226,7 @@ MonoBehaviour:
   maxIdleTime: 5
   patrolRotationSpeed: 1
   chaseRotationSpeed: 10
-  rotationRange: 180
+  rotationRange: 360
   rotateCount: 5
 --- !u!114 &1786397689088303976
 MonoBehaviour:

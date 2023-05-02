@@ -18,11 +18,11 @@ MonoBehaviour:
       previewAudioMixerGroup: {fileID: 0}
       expandPreview: 0
       expandAudioClips: 1
-      expandSettings: 0
+      expandSettings: 1
       previewCurves: 1
       audioMixerGroup: {fileID: 0}
       priority: 0.5
-      distanceEnabled: 1
+      distanceEnabled: 0
       distanceScale: 100
       preventEndClicks: 1
       loopEnabled: 1
@@ -44,8 +44,8 @@ MonoBehaviour:
       bypassVoiceEffects: 0
       bypassListenerEffects: 0
       volumeExpand: 1
-      volumeDecibel: 0
-      volumeRatio: 1
+      volumeDecibel: -2.58
+      volumeRatio: 0.74301916
       volumeRandomEnable: 0
       volumeRandomRangeDecibel: -3
       volumeDistanceRolloff: -2

@@ -15,16 +15,10 @@ namespace YATE.Audio
         [SerializeField, ReadOnly] private bool isPlayingWalkingFootSteps;
         [SerializeField, ReadOnly] private bool isPlayingSprintingFootSteps;
 
-        // Start is called before the first frame update
-        void Start()
+        public void Init()
         {
-            isPlayingWalkingFootSteps = false;
-            isPlayingSprintingFootSteps = false;
-        }   
-
-        private void OnDisable()
-        {
-            
+            StopWalkingFootSteps();
+            StopSprintingFootSteps();
         }
 
         // Update is called once per frame
