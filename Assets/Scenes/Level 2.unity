@@ -888,6 +888,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1414895362}
     m_Modifications:
+    - target: {fileID: 1409662816190502172, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
+        type: 3}
+      propertyPath: viewRadius
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1786397689088303977, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}
       propertyPath: m_RootOrder
@@ -957,22 +962,22 @@ PrefabInstance:
         type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
-      objectReference: {fileID: 114892880}
+      objectReference: {fileID: 1783238063}
     - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}
       propertyPath: waypoints.Array.data[1]
       value: 
-      objectReference: {fileID: 467600937}
+      objectReference: {fileID: 1390080420}
     - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}
       propertyPath: waypoints.Array.data[2]
       value: 
-      objectReference: {fileID: 1390080420}
+      objectReference: {fileID: 467600937}
     - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}
       propertyPath: waypoints.Array.data[3]
       value: 
-      objectReference: {fileID: 1783238063}
+      objectReference: {fileID: 114892880}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed, type: 3}
 --- !u!4 &106015212 stripped
@@ -2286,25 +2291,25 @@ PrefabInstance:
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
       propertyPath: cutsceneImages.Array.size
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
       propertyPath: cutsceneImages.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 9b51a3280278c47b48da252653eeb1c8,
+      objectReference: {fileID: 21300000, guid: b0d1a91612d1e48d3be58b8828d07693,
         type: 3}
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
       propertyPath: cutsceneImages.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: 28efe75bb065a411fbf66daf57a3d12f,
+      objectReference: {fileID: 21300000, guid: dffdd5866e7514c89a291bee7b90b317,
         type: 3}
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
       propertyPath: cutsceneImages.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: c0212d04dcbc24cf3afb4c2750e4b971,
+      objectReference: {fileID: 21300000, guid: 78f0012b88d504ff9a32c0fc2baf4af2,
         type: 3}
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
@@ -21330,6 +21335,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1414895362}
     m_Modifications:
+    - target: {fileID: 1409662816190502172, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
+        type: 3}
+      propertyPath: viewRadius
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1786397689088303977, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}
       propertyPath: m_RootOrder
@@ -21399,22 +21409,22 @@ PrefabInstance:
         type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
-      objectReference: {fileID: 1390080420}
+      objectReference: {fileID: 467600937}
     - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}
       propertyPath: waypoints.Array.data[1]
       value: 
-      objectReference: {fileID: 1783238063}
+      objectReference: {fileID: 114892880}
     - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}
       propertyPath: waypoints.Array.data[2]
       value: 
-      objectReference: {fileID: 114892880}
+      objectReference: {fileID: 1783238063}
     - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}
       propertyPath: waypoints.Array.data[3]
       value: 
-      objectReference: {fileID: 467600937}
+      objectReference: {fileID: 1390080420}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed, type: 3}
 --- !u!4 &2010365338 stripped
@@ -22578,6 +22588,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1414895362}
     m_Modifications:
+    - target: {fileID: 1409662816190502172, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
+        type: 3}
+      propertyPath: viewRadius
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1786397689088303977, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}
       propertyPath: m_RootOrder
@@ -22647,22 +22662,22 @@ PrefabInstance:
         type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
-      objectReference: {fileID: 1783238063}
+      objectReference: {fileID: 1390080420}
     - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}
       propertyPath: waypoints.Array.data[1]
       value: 
-      objectReference: {fileID: 114892880}
+      objectReference: {fileID: 467600937}
     - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}
       propertyPath: waypoints.Array.data[2]
       value: 
-      objectReference: {fileID: 467600937}
+      objectReference: {fileID: 114892880}
     - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}
       propertyPath: waypoints.Array.data[3]
       value: 
-      objectReference: {fileID: 1390080420}
+      objectReference: {fileID: 1783238063}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed, type: 3}
 --- !u!4 &2126010413 stripped
@@ -23243,6 +23258,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e41a89111525c944ba14aaaa8e638a55, type: 2}
+    - target: {fileID: 1773648922407538320, guid: b6baa40954a704cb580e297aa41c1c61,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1773648922407538320, guid: b6baa40954a704cb580e297aa41c1c61,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4729457135192047342, guid: b6baa40954a704cb580e297aa41c1c61,
         type: 3}
       propertyPath: m_RootOrder
@@ -23302,6 +23327,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shed
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903877040526005993, guid: b6baa40954a704cb580e297aa41c1c61,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903877040526005993, guid: b6baa40954a704cb580e297aa41c1c61,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6baa40954a704cb580e297aa41c1c61, type: 3}

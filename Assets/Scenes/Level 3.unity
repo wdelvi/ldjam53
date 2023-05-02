@@ -5073,13 +5073,13 @@ PrefabInstance:
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
       propertyPath: cutsceneImages.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
       propertyPath: cutsceneImages.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 574ef24268bcd4de291ccd574b661eb4,
+      objectReference: {fileID: 21300000, guid: e5b82f45bab1342abbe951b63747bc71,
         type: 3}
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
@@ -20162,6 +20162,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 128890574}
     m_Modifications:
+    - target: {fileID: 4789991493230568487, guid: 24e061fee2ab640db98557f1ad4d43b1,
+        type: 3}
+      propertyPath: distanceToTrigger
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 5307031111917880632, guid: 24e061fee2ab640db98557f1ad4d43b1,
         type: 3}
       propertyPath: m_text
@@ -21653,7 +21658,7 @@ PrefabInstance:
     - target: {fileID: 1786397689088303977, guid: de00ecdf1ce9a8a4aa1ab09f4bac44f7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.28
+      value: 22.18
       objectReference: {fileID: 0}
     - target: {fileID: 1786397689088303977, guid: de00ecdf1ce9a8a4aa1ab09f4bac44f7,
         type: 3}
@@ -21663,7 +21668,7 @@ PrefabInstance:
     - target: {fileID: 1786397689088303977, guid: de00ecdf1ce9a8a4aa1ab09f4bac44f7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.14
+      value: -5.39
       objectReference: {fileID: 0}
     - target: {fileID: 1786397689088303977, guid: de00ecdf1ce9a8a4aa1ab09f4bac44f7,
         type: 3}
