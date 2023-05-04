@@ -75,6 +75,7 @@ namespace YATE
 
         public async void LoadScene(string sceneName)
         {
+            playerCharacter?.CleanupOnExitScene();
             var scene = SceneManager.LoadSceneAsync(sceneName);
             scene.allowSceneActivation = true;
         }

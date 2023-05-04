@@ -49,6 +49,14 @@ namespace YATE
             animationController.Init(this);
         }
 
+        public void CleanupOnExitScene()
+        {
+            characterMovement.StopMoving();
+            footSteps.StopAllSounds();
+            babyDiscomfort.SetDiscomfort(0);
+            babyDiscomfort.DeactivateAllSound();
+        }
+
         public void AddEnemyInPursuit(AIAgent enemy)
         {
             enemiesInPursuit.Add(enemy);
