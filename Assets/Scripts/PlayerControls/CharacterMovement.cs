@@ -47,6 +47,11 @@ namespace YATE
             }
         }
 
+        public void StopMoving()
+        {
+            moveSpeed = 0f;
+        }
+
         private void OnDie()
         {
             AllowInput = false;

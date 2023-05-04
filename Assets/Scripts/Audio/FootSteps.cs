@@ -44,6 +44,12 @@ namespace YATE.Audio
             }
         }
 
+        public void StopAllSounds()
+        {
+            StopWalkingFootSteps();
+            StopSprintingFootSteps();
+        }
+
         private void PlayWalkingFootSteps()
         {
             if (isPlayingWalkingFootSteps) return;

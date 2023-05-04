@@ -114,14 +114,19 @@ namespace YATE
             discomfort = 1000f;
         }
 
-        private void DeactivateAllSound()
+        public void SetDiscomfort(float amount)
+        {
+            discomfort = amount;
+        }
+
+        public void DeactivateAllSound()
         {
             DeactivateCrying();
 
             isLowDiscomfort = false;
             isMediumDiscomfort = false;
 
-            lowDiscomfortSound?.Play(transform);
+            lowDiscomfortSound?.Stop(transform);
             mediumDiscomfortSound?.Stop(transform);
         }
 
