@@ -27731,36 +27731,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Runner
       objectReference: {fileID: 0}
-    - target: {fileID: 1786397689088303981, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
-        type: 3}
-      propertyPath: m_Speed
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1786397689088303981, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
-        type: 3}
-      propertyPath: m_Acceleration
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1786397689088303981, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
-        type: 3}
-      propertyPath: m_AngularSpeed
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
-        type: 3}
-      propertyPath: rotateSpeed
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
-        type: 3}
-      propertyPath: navigatorMaxSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
-        type: 3}
-      propertyPath: navigatorWalkSpeed
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}
       propertyPath: waypoints.Array.size
