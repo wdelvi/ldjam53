@@ -1290,6 +1290,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2683738262453034793, guid: 1305720c8c0a1794eb921f1a69df2ec0,
         type: 3}
+      propertyPath: internals.settings.debugSoundEventsInGameViewEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2683738262453034793, guid: 1305720c8c0a1794eb921f1a69df2ec0,
+        type: 3}
       propertyPath: internals.settings.debugSoundEventsInSceneViewEnabled
       value: 1
       objectReference: {fileID: 0}
