@@ -12,6 +12,7 @@ namespace YATE
 
         [Header("Movement Settings")]
         [SerializeField] private float moveSpeed = 5f;
+        [SerializeField] private float sprintMultiplier = 1.75f;
 
         [SerializeField, ReadOnly] private bool isSprinting;
         [SerializeField, ReadOnly] private float finalMoveSpeed;
@@ -69,7 +70,7 @@ namespace YATE
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 isSprinting = true;
-                finalMoveSpeed = moveSpeed * 2f;
+                finalMoveSpeed = moveSpeed * sprintMultiplier;
             }
             else
             {

@@ -5078,25 +5078,25 @@ PrefabInstance:
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
       propertyPath: cutsceneImages.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
       propertyPath: cutsceneImages.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: e5b82f45bab1342abbe951b63747bc71,
+      objectReference: {fileID: 21300000, guid: 03de09a0982d964429263a84d721b60a,
         type: 3}
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
       propertyPath: cutsceneImages.Array.data[1]
       value: 
-      objectReference: {fileID: 21300000, guid: cfae5ce856db64ac3a16aebf17ff6ff5,
+      objectReference: {fileID: 21300000, guid: 5a2ef3f9e15390745aa7ed8a6d8ef6d3,
         type: 3}
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
       propertyPath: cutsceneImages.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: 1bcf509ec62c84d5eaae9c915e22f7da,
+      objectReference: {fileID: 21300000, guid: 26c5b91f51588964184fdbe260c1536a,
         type: 3}
     - target: {fileID: 8306632466548595102, guid: 491a949c6d3f9f047aa800982ec89d0a,
         type: 3}
@@ -27730,36 +27730,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy Runner
-      objectReference: {fileID: 0}
-    - target: {fileID: 1786397689088303981, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
-        type: 3}
-      propertyPath: m_Speed
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1786397689088303981, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
-        type: 3}
-      propertyPath: m_Acceleration
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1786397689088303981, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
-        type: 3}
-      propertyPath: m_AngularSpeed
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
-        type: 3}
-      propertyPath: rotateSpeed
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
-        type: 3}
-      propertyPath: navigatorMaxSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
-        type: 3}
-      propertyPath: navigatorWalkSpeed
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1786397689088303983, guid: f1266c2e5bc6b6f46aaa95bab5a7a8ed,
         type: 3}

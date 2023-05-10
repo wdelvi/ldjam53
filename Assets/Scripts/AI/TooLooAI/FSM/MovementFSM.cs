@@ -7,11 +7,11 @@ namespace TooLoo.AI.FSM
     public class MovementFSM : MonoBehaviour
     {
         [Space(10)]
-        [Range(1f, 30f)]
+        [Range(1f, 40f)]
         [SerializeField] protected float rotateSpeed = 20f;
-        [Range(0f, 3f)]
+        [Range(0f, 5f)]
         [SerializeField] protected float navigatorWalkSpeed = 2f;
-        [Range(0f, 15f)]
+        [Range(0f, 20f)]
         [SerializeField] protected float navigatorMaxSpeed = 8f;
 
         protected readonly StateMachine fsm = new();
