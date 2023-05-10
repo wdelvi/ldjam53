@@ -191,8 +191,8 @@ MonoBehaviour:
   aiBrain: {fileID: 5214394954274145680}
   animationController: {fileID: 624580351954839278}
   fov: {fileID: 4198486232901109529}
-  attackRange: 2
-  attackDamage: 30
+  attackRange: 10
+  attackDamage: 60
 --- !u!114 &5214394954274145680
 MonoBehaviour:
   m_ObjectHideFlags: 0
