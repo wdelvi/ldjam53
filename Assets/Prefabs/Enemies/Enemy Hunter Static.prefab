@@ -81,7 +81,7 @@ MonoBehaviour:
   aiBrain: {fileID: 4835800433632710272}
   animationController: {fileID: 114557110837262614}
   fov: {fileID: 1409662816190502172}
-  attackRange: 10
+  attackRange: 8
   attackDamage: 60
 --- !u!114 &1786397689088303976
 MonoBehaviour:
