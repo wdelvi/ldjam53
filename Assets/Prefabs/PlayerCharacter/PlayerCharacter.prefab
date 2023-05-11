@@ -68,6 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  sprintMultiplier: 1.75
   isSprinting: 0
   finalMoveSpeed: 0
 --- !u!114 &8481161838923922037
@@ -102,8 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingAmount: 0
-  reduceRate: 5
-  discomfortOnSprint: 45
+  reduceRate: 6.5
+  discomfortOnSprint: 40
   discomfortOnDamage: 0.5
   lowDiscomfortMin: 30
   lowDiscomfortMax: 60
