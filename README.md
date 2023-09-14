@@ -1,12 +1,17 @@
 ![Main Menu View](./Docs/YATEMainMenu.png)
 
-### Ludem Dare 53
+## Ludem Dare 53
 
 ### Theme: Delivery
 
-[Play Here!](https://ldjam.com/events/ludum-dare/53/you-are-the-end)
 
 A short and dark story-driven game about a post-apocalyptic survivor, Cason, who needs to deliver a newborn to one of the last human settlements. The road is filled with the infected, and you have a baby who gets frightened easily. Balance stealth with quick movements while also trying to keep the baby calm. 
+
+[Play here!](https://tooloo.itch.io/you-are-the-end)
+
+[See our reviews here!](https://ldjam.com/events/ludum-dare/53/you-are-the-end)
+
+---
 
 ![Scene 2](./Docs/YATE2.PNG)
 
